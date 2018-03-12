@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <!-- <link rel="stylesheet" href="">-->
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 
 <body>
@@ -33,23 +33,40 @@
             <div>
                 <h3>Author Style</h3>
                 <p>It is a style sheets specified by the developer of the website. Which can be categorized into: </p>
-                <ul>
-                    <li>External - placed in the head of html using the link element.</li>
-                    <p>&lt;link rel="stylesheet" href=""&gt;</p>
-                    <li>Embedded or Internal - placed in the head of html using the style element.</li>
-                    <p>&lt;style&gt; &lt;/style&gt;</p>
+                <ol>
                     <li>Inline - placed in a specific element by using style attribute.</li>
                     <p>&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
-                </ul>
-            </div>  
+                    <li>Embedded or Internal - placed in the head of html using the style element.</li>
+                    <p>&lt;style&gt; &lt;/style&gt;</p>
+                    <li>External - placed in the head of html using the link element.</li>
+                    <p>&lt;link rel="stylesheet" href=""&gt;</p>
+                </ol>
+                <p>Note: The categories of author style above is aranged (Highest to Lowest priority) when the author specified more than one style for specific element, the one that will apply is the inline since it has higher priority.</p>
+            </div>
             <div>
                 <h3>User Style</h3>
                 <p>A style sheets specified by the user for the website, it is usually done by having some plugins in the browser, although some browsers support it. It is helpful for person with eye problems.</p>
-            </div> 
+            </div>
             <div>
                 <h3>User-Agent Style</h3>
                 <p>Also known as default style sheets, it is provided by the browser that is being used to access the website. Different browsers have different style sheets to present the website. It is used when there is no other style sheets are specified for specific element of HTML.</p>
-            </div> 
+            </div>
+            <div>
+                <h3>!important Declaration</h3>
+                <p>A property can be declared !important meaning it is higher priority than the other property, it will not be overridden by property declared normal even if it is declared after the !important declaration. In some cases there might be two !important declaration for the same property, then we can look into the order of the origin to see which will be applied.</p>
+            </div>
+            <div>
+                <h3>Order of Origin (Cascading)</h3>
+                <p>When there are collision between properties, meaning the property is being declared multiply times in different style sheets, there is a order in which style sheet will be applied for the property (Highest to Lowest priority):</p>
+                <ol>
+                    <li>User important declarations </li>
+                    <li>Author important declarations </li>
+                    <li>Author normal declarations </li>
+                    <li>User normal declarations </li>
+                    <li>User agent declarations </li>
+                </ol>
+                <p>Note: When a property is declared in the same origin then the latest declaration will be one one that will apply.</p>
+            </div>
         </article>
     </section>
 </body>
