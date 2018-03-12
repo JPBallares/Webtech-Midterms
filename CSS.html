@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -35,11 +35,11 @@
                 <p>It is a style sheets specified by the developer of the website. Which can be categorized into: </p>
                 <ol>
                     <li>Inline - placed in a specific element by using style attribute.</li>
-                    <p>&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
+                    <p class="code">&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
                     <li>Embedded or Internal - placed in the head of html using the style element.</li>
-                    <p>&lt;style&gt; &lt;/style&gt;</p>
+                    <p class="code">&lt;style&gt; &lt;/style&gt;</p>
                     <li>External - placed in the head of html using the link element.</li>
-                    <p>&lt;link rel="stylesheet" href=""&gt;</p>
+                    <p class="code">&lt;link rel="stylesheet" href=""&gt;</p>
                 </ol>
                 <p>Note: The categories of author style above is aranged (Highest to Lowest priority) when the author specified more than one style for specific element, the one that will apply is the inline since it has higher priority.</p>
             </div>
@@ -68,13 +68,28 @@
                 <p>Note: When a property is declared in the same origin then the latest declaration will be one one that will apply.</p>
             </div>
         </article>
+        <article>
+            <h2>CSS Syntax</h2>
+            <p>CSS syntax specify on the correct way of writing CSS that can be render by the browser. The basic building block of CSS are properties and values.</p>
+            <ul>
+                <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
+                <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
+            </ul>
+            <div>
+                <h3>CSS Declaration</h3>
+                <p>CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations. </p>
+                <img src="CSS-declaration.png" alt="CSS Declaration Example" width="300">
+            </div>
+
+        </article>
     </section>
 </body>
 
 </html>
 
-http://www.corelangs.com/css/basics/versions.html<br>
-http://amyhissom.com/HTML5-CSS3/history.html#3<br>
-https://www.thoughtco.com/css2-vs-css3-3466978<br>
-https://www.w3.org/TR/CSS/#css-levels
-https://www.w3.org/TR/CSS2/cascade.html<br>
+<a href="http://www.corelangs.com/css/basics/versions.html">http://www.corelangs.com/css/basics/versions.html</a><br>
+<a href="http://amyhissom.com/HTML5-CSS3/history.html#3">http://amyhissom.com/HTML5-CSS3/history.html#3</a><br>
+<a href="https://www.thoughtco.com/css2-vs-css3-3466978">href="https://www.thoughtco.com/css2-vs-css3-3466978</a><br>
+<a href="https://www.w3.org/TR/CSS/#css-levels">https://www.w3.org/TR/CSS/#css-levels</a><br>
+<a href="https://www.w3.org/TR/CSS2/cascade.html">https://www.w3.org/TR/CSS2/cascade.html</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax</a><br>

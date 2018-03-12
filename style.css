@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.mdn.mozilla.net/static/fonts/OpenSans-Regular-webfont.3f642fa3ea74.woff2") format("woff2"), url("https://cdn.mdn.mozilla.net/static/fonts/OpenSans-Regular-webfont.ac327c4db628.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://cdn.mdn.mozilla.net/static/fonts/OpenSans-Italic-webfont.47c24d65c5a6.woff2") format("woff2"), url("https://cdn.mdn.mozilla.net/static/fonts/OpenSans-Italic-webfont.525074686dfb.woff") format("woff");
+}
+
+body {
+    font-family: "Open Sans";
+    width: 60%;
+    margin: auto;
+}
+
+.code {
+    font-family: "consolas";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    body{
+        width: 95%;
+    }
+    
+}
