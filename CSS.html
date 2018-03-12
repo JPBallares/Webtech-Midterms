@@ -69,26 +69,36 @@
             </div>
         </article>
         <article>
-            <h2>CSS Syntax</h2>
-            <p>CSS syntax specify on the correct way of writing CSS that can be render by the browser. The basic building block of CSS are properties and values.</p>
+            <h2>CSS Statements</h2>
+            <p>CSS statement are statements that is being rendered by the browser to provide styles or lay-out for elements of HTML or the HTML itself. This statements can be categorized into two:</p>
             <ul>
-                <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
-                <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
+                <li><span class="bold">Ruleset</span> is a combination of selectors and declaration block, considered as main building block of CSS. </li>
+                <li><span class="bold">At-Rules</span> begins with @ followed by an identifier, it tells the CSS what to do and how it should be done. Each of the identifier has its own way of creating a statement.</li>
             </ul>
             <div>
-                <h3>CSS Declaration</h3>
-                <p>CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations. </p>
-                <img src="CSS-declaration.png" alt="CSS Declaration Example" width="300">
+                <h3>CSS Ruleset</h3>
+                <p>Compose of selector which represents the element of the HTML to apply the style, declaration block which is compose of declarations.</p>
+                <img src="CSS-ruleset.png" alt="Structure of CSS Ruleset">
+                <div>
+                    <h4>CSS Declaration Block</h4>
+                    <p>Compose of CSS declarations enclosed by curly braces ({ }) which is applied for specific elements of HTML. For inline CSS using style attribute, curly braces are removed because it can only be applied for the element with the style attribute.</p>
+                    <img src="CSS-block.png" alt="CSS Declaration Block Example">
+                </div>
+                <div>
+                    <h4>CSS Declaration</h4>
+                    <p>CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations. </p>
+                    <img src="CSS-declaration.png" alt="CSS Declaration Example" width="300">
+                    <ul>
+                        <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
+                        <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
+                    </ul>
+                </div>
             </div>
             <div>
-                <h3>CSS Declaration Block</h3>
-                <p>Compose of CSS declarations enclosed by curly braces ({ }) which is applied for specific elements of HTML. For inline CSS using style attribute, curly braces are removed because it can only be applied for the element with the style attribute.</p>
-                <img src="CSS-block.png" alt="CSS Declaration Block Example">
-            </div>
-            <div>
-                <h3>CSS Statements</h3>
+                <h3>CSS At-rules</h3>
                 <p></p>
             </div>
+
         </article>
     </section>
 </body>
