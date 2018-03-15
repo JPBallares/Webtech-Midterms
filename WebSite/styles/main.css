@@ -130,12 +130,98 @@ title {
     clear: both;
     background-color: #ffffff;
     width: 100%;
-    height: 100vh;
 }
 
 /* Home */
 
+#introduction {
+    padding-top: 5%;
+}
+
+#introduction p {
+    padding: 5%;
+    line-height: 150%;
+}
+
+#introduction h1 {
+    padding: 3%;
+}
+
+
+#intro_goal {
+    float: left;
+    width: 32.8%;
+    padding: 1%;
+    margin-left: 15%;
+}
+
+#intro_who {
+    float: left;
+    width: 32.8%;
+    padding: 1%;
+    margin-right: 15%;
+    border-left: 1px solid black;
+}
+
+.left_arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 50px 40px 0;
+    border-color: transparent #ffffff transparent transparent;
+    float: right;
+    margin-top: 20%;
+}
+
+.rigt_arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 0 40px 50px;
+    border-color: transparent transparent transparent #ffffff;
+    float: left;
+    margin-top: 20%;
+}
+
+#www_pic {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    margin-top: 4%;
+    background-image: url(imgs/www_bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#www_rm {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    margin-top: 4%;;
+}
+
+#http_rm {
+    float: left;
+    width: 50%;
+    height: 50vh;
+}
+
+#http_pic {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background-image: url(imgs/http_bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
 /* Home */
+
+#space_bot {
+    clear: both;
+    height: 5vh;
+    width: 100%;
+}
 
 /*----- Contents -----*/
 
@@ -144,6 +230,7 @@ title {
 /*----- Footer -----*/
 
 footer {
+    clear: both;
     width: 100%;
     background-color: #1e1f26;
     color: white;
