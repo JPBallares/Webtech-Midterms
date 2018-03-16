@@ -134,8 +134,15 @@ title {
 
 /* Home */
 
+hr {
+    color: white;
+}
+
 #introduction {
     padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #4d648d;
+    color: white;
 }
 
 #introduction p {
@@ -147,6 +154,10 @@ title {
     padding: 3%;
 }
 
+.blank {
+    clear: both;
+    height: 1px;
+}
 
 #intro_goal {
     float: left;
@@ -160,7 +171,7 @@ title {
     width: 32.8%;
     padding: 1%;
     margin-right: 15%;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
 }
 
 .left_arrow {
@@ -170,7 +181,7 @@ title {
     border-width: 40px 50px 40px 0;
     border-color: transparent #ffffff transparent transparent;
     float: right;
-    margin-top: 20%;
+    margin-top: 200px;
 }
 
 .rigt_arrow {
@@ -180,39 +191,103 @@ title {
     border-width: 40px 0 40px 50px;
     border-color: transparent transparent transparent #ffffff;
     float: left;
-    margin-top: 20%;
+    margin-top: 200px;
 }
 
 #www_pic {
     float: left;
     width: 50%;
-    height: 50vh;
-    margin-top: 4%;
+    height: 500px;
     background-image: url(imgs/www_bg.png);
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
 #www_rm {
     float: left;
     width: 50%;
-    height: 50vh;
-    margin-top: 4%;;
+    height: 500px;
 }
 
 #http_rm {
     float: left;
     width: 50%;
-    height: 50vh;
+    height: 500px;
 }
 
 #http_pic {
     float: left;
     width: 50%;
-    height: 50vh;
+    height: 500px;
     background-image: url(imgs/http_bg.png);
     background-position: left;
     background-repeat: no-repeat;
+}
+
+#html_pic {
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-image: url(imgs/html_bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#html_rm {
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin-top: 4%;;
+}
+
+.logo_left img {
+    width: 250px;
+}
+
+.logo_left {
+    float: right;
+    margin: 55px 200px 0 0;
+    text-align: center;
+}
+
+.logo_left p {
+    color: white;
+    font-size: 80px;
+    letter-spacing: 8px;
+}
+
+.logo_right img {
+    width: 250px;
+}
+
+.logo_right {
+    float: left;
+    margin: 55px 0 0 200px;
+    text-align: center;
+}
+
+.logo_right p {
+    color: white;
+    font-size: 80px;
+    letter-spacing: 8px;
+}
+
+.description_right {
+    width: 80%;
+    margin: 80px 0 0 90px;
+}
+
+.description_right p:nth-child(1) {
+    font-size: 45px;
+}
+
+.description_left {
+    width: 80%;
+    margin: 80px 0 0 90px;
+}
+
+.description_left p:nth-child(1) {
+    font-size: 45px;
 }
 
 /* Home */
