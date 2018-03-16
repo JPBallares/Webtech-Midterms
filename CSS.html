@@ -13,7 +13,7 @@
         <h1>Cascading Style Sheets</h1>
         <p>Cascading Style Sheets (CSS) is a language used to specify presentation, style or layout of a markup languages (HTML, XHTML, XML, SVG) but it is more common on web pages. The presentation, style or layout may refer to font, color, size, and position of the contents. It can also be used in adding animation to a web pages. It was developed by Håkon Wium Lie and Bert Bos. The idea for using CSS is to separate the presentational aspect from markup languages.</p>
         <article>
-            <h2>CSS Levels</h2>
+            <h2 id="css-levels">CSS Levels</h2>
             <div>
                 <h3>CSS Level 1 (CSS 1)</h3>
                 <p>The first CSS that is published on December 1996, and became an official W3C Recommendation. The features of CSS Level 1 are font properties, changing colors of elements like font color and background color, text attributes, alignment of contents (text, images, tables and others), the concept of border, margin, padding and positioning and unique identification and generic classification of groups of attributes.</p>
@@ -29,7 +29,7 @@
             </div>
         </article>
         <article>
-            <h2>Origin of HTML Stylesheets</h2>
+            <h2 id="css-origin">Origin of HTML Stylesheets</h2>
             <div>
                 <h3>Author Style</h3>
                 <p>It is a style sheets specified by the developer of the website. Which can be categorized into: </p>
@@ -56,27 +56,32 @@
                 <p>A property can be declared !important meaning it is higher priority than the other property, it will not be overridden by property declared normal even if it is declared after the !important declaration. In some cases there might be two !important declaration for the same property, then we can look into the order of the origin to see which will be applied.</p>
             </div>
             <div>
-                <h3>Order of Origin (Cascading)</h3>
+                <h3 id="origin-precedence">Precedence of Origin (Cascading)</h3>
                 <p>When there are collision between properties, meaning the property is being declared multiply times in different style sheets, there is a order in which style sheet will be applied for the property (Highest to Lowest priority):</p>
                 <ol>
+                    <li>Transition declarations</li>
+                    <li>User agent important declarations</li>
                     <li>User important declarations </li>
+                    <li>Override important declarations</li>
                     <li>Author important declarations </li>
+                    <li>Animation declarations</li>
+                    <li>Override normal declarations</li>
                     <li>Author normal declarations </li>
                     <li>User normal declarations </li>
-                    <li>User agent declarations </li>
+                    <li>User agent normal declarations </li>
                 </ol>
                 <p>Note: When a property is declared in the same origin then the latest declaration will be one one that will apply.</p>
             </div>
         </article>
         <article>
-            <h2>CSS Statements</h2>
+            <h2 id="css-statements">CSS Statements</h2>
             <p>CSS statement are statements that is being rendered by the browser to provide styles or lay-out for elements of HTML or the HTML itself. This statements can be categorized into two:</p>
             <ul>
                 <li><span class="bold">Ruleset</span> is a combination of selectors and declaration block, considered as main building block of CSS. </li>
                 <li><span class="bold">At-Rules</span> begins with @ followed by an identifier, it tells the CSS what to do and how it should be done. Each of the identifier has its own way of creating a statement.</li>
             </ul>
             <div>
-                <h3>CSS Ruleset</h3>
+                <h3 id="css-ruleset">CSS Ruleset</h3>
                 <p>Compose of selector which represents the element of the HTML to apply the style, declaration block which is compose of declarations.</p>
                 <img src="CSS-ruleset.png" alt="Structure of CSS Ruleset">
                 <div>
@@ -85,7 +90,7 @@
                     <img src="CSS-block.png" alt="CSS Declaration Block Example">
                 </div>
                 <div>
-                    <h4>CSS Declaration</h4>
+                    <h4 id="css-declaration">CSS Declaration</h4>
                     <p>CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations. </p>
                     <img src="CSS-declaration.png" alt="CSS Declaration Example" width="300">
                     <ul>
@@ -95,24 +100,53 @@
                 </div>
             </div>
             <div>
-                <h3>CSS At-rules</h3>
-                <p></p>
+                <h3 id="css-at-rules">CSS At-rules</h3>
+                <div>
+                    <h4>Regular At-rules</h4>
+                    <p><span class="bold">Regular At-rules</span> follows regular syntax @KEYWORD followed by the rule to specifiy.</p>
+                    <ul>
+                        <li><span class="code bold">@charset</span> - used to specify the character set to be used when rendering the website.</li>
+                        <li><span class="code bold">@import</span> - used to include another external CSS in a CSS, must be inserted at topmost part of the stylesheet.</li>
+                        <li><span class="code bold">@namespace</span> - allows the use of other namespaces from XML or SVG.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Nested At-rules</h4>
+                    <p><span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.</p>
+                    <ul>
+                        <li>@media</li>
+                        <li>@supports</li>
+                        <li>@document</li>
+                        <li>@page</li>
+                        <li>@font-face</li>
+                        <li>@keyframes</li>
+                        <li>@viewport</li>
+                        <li>@counter-style</li>
+                        <li>@font-feature-values</li>
+                    </ul>
+                </div>
             </div>
+        </article>
+        <article>
             <div>
-                <h3>CSS Rule Precedence</h3>
+                <h2 id="css-rule-precedence">CSS Rule Precedence</h2>
                 <p> an HTML element may be the subject of the multiple style rules</p>
                 <ul>
                     <li>when such rules target different properties their effects cascade (i.e, are combined) </li>
                     <li>when the styles involve the same property, they conflict, and must be resolved such that one style is applied</li>
                     <li>resolution</li>
-                       <ul>
-                           <li>by origin and importance</li>
-                           <li>by specificity</li>
-                           <li>by order</li>
-                       </ul>
+                    <ol>
+                        <li>by <a href="#origin-precedence">origin and importance</a></li>
+                        <li>by specificity - more specific selector will be applied. <br>The selectors are arranged in order of highest to lowest specificity:</li>
+                        <ol>
+                            <li>ID selectors</li>
+                            <li>Class selectors</li>
+                            <li>Type Selectors</li>
+                        </ol>
+                        <li>by order - latest declaration will apply</li>
+                    </ol>
                 </ul>
-</div>
-
+            </div>
         </article>
     </section>
 </body>
@@ -124,4 +158,6 @@
 <a href="https://www.thoughtco.com/css2-vs-css3-3466978">href="https://www.thoughtco.com/css2-vs-css3-3466978</a><br>
 <a href="https://www.w3.org/TR/CSS/#css-levels">https://www.w3.org/TR/CSS/#css-levels</a><br>
 <a href="https://www.w3.org/TR/CSS2/cascade.html">https://www.w3.org/TR/CSS2/cascade.html</a><br>
+<a href="https://www.w3.org/TR/css3-cascade/#cascading">https://www.w3.org/TR/css3-cascade/#cascading</a><br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule</a><br>
