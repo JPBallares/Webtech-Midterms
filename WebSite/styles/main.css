@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: roboto;
     display: block;
 }
 
@@ -32,6 +32,11 @@ title {
     src: url(./fonts/audiowide.ttf);
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url(./fonts/roboto.ttf);
+}
+
 /*--- Fonts ---*/
 
 
@@ -49,17 +54,19 @@ title {
     float: left;
     padding: 2% 0% 1% 5%;
     color: #fff;
+    width: 15%;
 }
 
 #logo img {
-    width: 200px;
+    width: 100%;
 }
 
 #logo_txt {
+    width: 100%;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #1e1f26;
-    padding: 5% 5% 5% 25%;
+    padding: 7% 5% 5% 25%;
 }
 
 #web_sys {
@@ -68,7 +75,7 @@ title {
 }
 
 #web_sys h1{
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 100;
     font-family: monoton;
 }
@@ -134,24 +141,23 @@ title {
 
 /* Home */
 
-hr {
-    color: white;
-}
-
 #introduction {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #4d648d;
     color: white;
+    text-align: justify;
 }
 
 #introduction p {
+    font-size: 20px;
     padding: 5%;
     line-height: 150%;
 }
 
 #introduction h1 {
     padding: 3%;
+    font-size: 50px;
 }
 
 .blank {
@@ -161,16 +167,18 @@ hr {
 
 #intro_goal {
     float: left;
-    width: 32.8%;
+    width: 37.8%;
     padding: 1%;
-    margin-left: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #intro_who {
     float: left;
-    width: 32.8%;
+    width: 37.8%;
     padding: 1%;
-    margin-right: 15%;
+    margin-right: 5%;
+    padding-left: 5%;
     border-left: 1px solid white;
 }
 
@@ -237,7 +245,6 @@ hr {
     float: left;
     width: 50%;
     height: 500px;
-    margin-top: 4%;;
 }
 
 .logo_left img {
@@ -246,7 +253,7 @@ hr {
 
 .logo_left {
     float: right;
-    margin: 55px 200px 0 0;
+    margin: 80px 100px 0 0;
     text-align: center;
 }
 
@@ -262,7 +269,7 @@ hr {
 
 .logo_right {
     float: left;
-    margin: 55px 0 0 200px;
+    margin: 80px 0 0 100px;
     text-align: center;
 }
 
@@ -273,6 +280,7 @@ hr {
 }
 
 .description_right {
+    float: left;
     width: 80%;
     margin: 80px 0 0 90px;
 }
@@ -282,8 +290,9 @@ hr {
 }
 
 .description_left {
+    float: right;
     width: 80%;
-    margin: 80px 0 0 90px;
+    margin: 80px 90px 0 0;
 }
 
 .description_left p:nth-child(1) {
@@ -314,9 +323,12 @@ footer {
 #footer_text {
     text-align: center;
     padding: 2%;
+    font-family: beon;
 }
 
 /*----- Footer -----*/
+
+
 
 /*----- JQuery -----*/
 
@@ -327,4 +339,93 @@ footer {
 }
 
 /*----- JQuery -----*/
+
+
+
+/*----- Media Queries -----*/
+
+@media (max-width: 1440px){
+    
+    #logo_txt {
+        font-size: 25px;
+        padding: 6% 5% 5% 22%;
+    }
+    
+    #web_sys h1{
+        font-size: 60px;
+    }
+    
+    #introduction p {
+        font-size: 15px;
+        padding: 2.5%;
+    }
+    
+    #introduction h1 {
+        font-size: 40px;
+        padding: 1.5%;
+    }
+    
+    .logo_left img {
+        width: 200px;
+    }
+
+    .logo_left {
+        float: right;
+        margin: 100px 100px 0 0;
+        text-align: center;
+    }
+
+    .logo_left p {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 8px;
+    }
+
+    .logo_right img {
+        width: 200px;
+    }
+
+    .logo_right {
+        float: left;
+        margin: 100px 0 0 100px;
+        text-align: center;
+    }
+
+    .logo_right p {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 8px;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    
+    #logo_txt {
+        font-size: 18px;
+    }
+    
+    #web_sys h1{
+        font-size: 45px;
+    }
+    
+    #introduction p {
+        font-size: 10px;
+    }
+    
+    #introduction h1 {
+        font-size: 30px;
+    }
+    
+    .description_right p:nth-child(1) {
+        font-size: 20px;
+    }
+    
+    .description_left p:nth-child(1) {
+        font-size: 20px;
+    }
+    
+}
+
+/*----- Media Queries-----*/
 
