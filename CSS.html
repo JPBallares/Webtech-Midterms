@@ -130,7 +130,48 @@
         <article>
             <div>
                 <h2>CSS Selectors</h2>
-                <p>A <span class="bold">selector</span> is a expression which is used to specify which HTML element will the CSS statements will apply. There are </p>
+                <p>A <span class="bold">selector</span> is a expression which is used to select which HTML elements will the CSS statements will apply.</p>
+                <div>
+                    <h3>Simple Selectors</h3>
+                    <ul>
+                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML<br>
+                            <span class="bold">Example:</span> <span class="code">*, .classname</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.<br>
+                            <span class="bold">Example:</span> <span class="code">h1, p, body, head</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.<br>
+                            <span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.<br>
+                            <span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.<br>
+                            <span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Combinators</h3>
+                    <ul>
+                        <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span>
+                        </li><br>
+                        <li><span class="bold">General Sibling Combinator</span> - uses ~ symbol,selects element that follows after the specified element but not immediately, and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h2 ~ div, h3 ~ ol</span>
+                        </li><br>
+                        <li><span class="bold">Child Combinator</span> - uses > symbol, selects element that are children of the specified element (not including those that are under another element).<br>
+                            <span class="bold">Example:</span> <span class="code">ul > li </span>, all li elements that are directly inside the ul is selected, but if the li is contained in a div even if the div is contained in ul, it will not be included.
+                        </li><br>
+                        <li><span class="bold">Descendant Combinator</span> - uses a white space, selects element that are inside the specified element even if it is contained in other element if the element is inside the specified element.<br>
+                            <span class="bold">Example:</span> <span class="code">article div</span> selects all div that are inside the article.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </article>
         <article>
