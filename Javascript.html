@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Javascript</h1>
+        <p>Javascript is an interpreted and high-level programming language, it is the most commonly used scripting language. It is one of the main used language for World Wide Web content development along with HTML and CSS. Javascript makes webpages interactive. Javascript is developed by Ecma International (an industry association dedicated to the standardization of information and communication systems).</p>
+        <article>
+            <h2 id="css-levels">CSS Levels</h2>
+            <div>
+                <h3>CSS Level 1 (CSS 1)</h3>
+                <p>The first CSS that is published on December 1996, and became an official W3C Recommendation. The features of CSS Level 1 are font properties, changing colors of elements like font color and background color, text attributes, alignment of contents (text, images, tables and others), the concept of border, margin, padding and positioning and unique identification and generic classification of groups of attributes.</p>
+            </div>
+            <div>
+                <h3>CSS Level 2 (CSS 2)</h3>
+                <p>Published on May 1998 by W3C as a Recommendation. Added functions mostly for positioning layout like position relative, absolute, and fixed, also added z-index which is use to position element above or under other elements. It also added media types which can be use to display web pages in different platform, aural style sheets which allows audio or sound presentation, bidirectional text, and new font properties.</p>
+                <p>There is also a CSS Level 2 Revision 1 (CSS 2.1), which is released to fix bugs and improve compatibility of in CSS 2 which is released on June 2011</p>
+            </div>
+            <div>
+                <h3>CSS Level 3 (CSS 3)</h3>
+                <p>In CSS 3, there are many features that is introduced, included are new selectors (:target, nth-child(n), etc.), new properties (flexbox, grid, border-radius, etc), multiple background image, rounded border using border-radius, new text module, and new color module like the rgba which includes the transparency of the color.</p>
+            </div>
+        </article>
+        <article>
+            <h2 id="css-origin">Origin of HTML Stylesheets</h2>
+            <div>
+                <h3>Author Style</h3>
+                <p>It is a style sheets specified by the developer of the website. Which can be categorized into: </p>
+                <ol>
+                    <li>Inline - placed in a specific element by using style attribute.</li>
+                    <p class="code">&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
+                    <li>Embedded or Internal - placed in the head of html using the style element.</li>
+                    <p class="code">&lt;style&gt; &lt;/style&gt;</p>
+                    <li>External - placed in the head of html using the link element.</li>
+                    <p class="code">&lt;link rel="stylesheet" href=""&gt;</p>
+                </ol>
+                <p>Note: The categories of author style above is aranged (Highest to Lowest priority) when the author specified more than one style for specific element, the one that will apply is the inline since it has higher priority.</p>
+            </div>
+            <div>
+                <h3>User Style</h3>
+                <p>A style sheets specified by the user for the website, it is usually done by having some plugins in the browser, although some browsers support it. It is helpful for person with eye problems.</p>
+            </div>
+            <div>
+                <h3>User-Agent Style</h3>
+                <p>Also known as default style sheets, it is provided by the browser that is being used to access the website. Different browsers have different style sheets to present the website. It is used when there is no other style sheets are specified for specific element of HTML.</p>
+            </div>
+            <div>
+                <h3>!important Declaration</h3>
+                <p>A property can be declared !important meaning it is higher priority than the other property, it will not be overridden by property declared normal even if it is declared after the !important declaration. In some cases there might be two !important declaration for the same property, then we can look into the order of the origin to see which will be applied.</p>
+            </div>
+            <div>
+                <h3 id="origin-precedence">Precedence of Origin (Cascading)</h3>
+                <p>When there are collision between properties, meaning the property is being declared multiply times in different style sheets, there is a order in which style sheet will be applied for the property (Highest to Lowest priority):</p>
+                <ol>
+                    <li>Transition declarations</li>
+                    <li>User agent important declarations</li>
+                    <li>User important declarations </li>
+                    <li>Override important declarations</li>
+                    <li>Author important declarations </li>
+                    <li>Animation declarations</li>
+                    <li>Override normal declarations</li>
+                    <li>Author normal declarations </li>
+                    <li>User normal declarations </li>
+                    <li>User agent normal declarations </li>
+                </ol>
+                <p>Note: When a property is declared in the same origin then the latest declaration will be one one that will apply.</p>
+            </div>
+        </article>
+        <article>
+            <h2 id="css-statements">CSS Statements</h2>
+            <p>CSS statement are statements that is being rendered by the browser to provide styles or lay-out for elements of HTML or the HTML itself. This statements can be categorized into two:</p>
+            <ul>
+                <li><span class="bold">Ruleset</span> is a combination of selectors and declaration block, considered as main building block of CSS. </li>
+                <li><span class="bold">At-Rules</span> begins with @ followed by an identifier, it tells the CSS what to do and how it should be done. Each of the identifier has its own way of creating a statement.</li>
+            </ul>
+            <div>
+                <h3 id="css-ruleset">CSS Ruleset</h3>
+                <p>Compose of selector which represents the element of the HTML to apply the style, declaration block which is compose of declarations.</p>
+                <img src="CSS-ruleset.png" alt="Structure of CSS Ruleset">
+                <div>
+                    <h4>CSS Declaration Block</h4>
+                    <p>Compose of CSS declarations enclosed by curly braces ({ }) which is applied for specific elements of HTML. For inline CSS using style attribute, curly braces are removed because it can only be applied for the element with the style attribute.</p>
+                    <img src="CSS-block.png" alt="CSS Declaration Block Example">
+                </div>
+                <div>
+                    <h4 id="css-declaration">CSS Declaration</h4>
+                    <p>CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations. </p>
+                    <img src="CSS-declaration.png" alt="CSS Declaration Example" width="300">
+                    <ul>
+                        <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
+                        <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3 id="css-at-rules">CSS At-rules</h3>
+                <div>
+                    <h4>Regular At-rules</h4>
+                    <p><span class="bold">Regular At-rules</span> follows regular syntax @KEYWORD followed by the rule to specifiy.</p>
+                    <ul>
+                        <li><span class="code bold">@charset</span> - used to specify the character set to be used when rendering the website.</li>
+                        <li><span class="code bold">@import</span> - used to include another external CSS in a CSS, must be inserted at topmost part of the stylesheet.</li>
+                        <li><span class="code bold">@namespace</span> - allows the use of other namespaces from XML or SVG.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 id="nested-at-rules">Nested At-rules</h4>
+                    <p><span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.</p>
+                    <ul>
+                        <li><span class="code bold">@media</span> - allows to apply styles to a specific media query (eg. screen sizes)</li>
+                        <li><span class="code bold">@supports</span> - can be used to check if browser supports a specific feature before applying the styles.</li>
+                        <li><span class="code bold">@document</span> - allows to apply styles to a specific page, this styles will be ignored by the other pages of the website.</li>
+                        <li><span class="code bold">@page</span> - use to layout the printing of the page.</li>
+                        <li><span class="code bold">@font-face</span> - use to add new font that can be used in styling the website.</li>
+                        <li><span class="code bold">@keyframes</span> - use to specify keyframes for an animation which can be applied to a selector.</li>
+                        <li><span class="code bold">@viewport</span> - currently at the Working Draft stage</li>
+                        <li><span class="code bold">@counter-style</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
+                        <li><span class="code bold">@font-feature-values</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>CSS Selectors</h2>
+                <p>A <span class="bold">selector</span> is a expression which is used to select which HTML elements will the CSS statements will apply.</p>
+                <div>
+                    <h3>Simple Selectors</h3>
+                    <ul>
+                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML<br>
+                            <span class="bold">Example:</span> <span class="code">*, .classname</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.<br>
+                            <span class="bold">Example:</span> <span class="code">h1, p, body, head</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.<br>
+                            <span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.<br>
+                            <span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.<br>
+                            <span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Combinators</h3>
+                    <ul>
+                        <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span>
+                        </li><br>
+                        <li><span class="bold">General Sibling Combinator</span> - uses ~ symbol,selects element that follows after the specified element but not immediately, and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h2 ~ div, h3 ~ ol</span>
+                        </li><br>
+                        <li><span class="bold">Child Combinator</span> - uses > symbol, selects element that are children of the specified element (not including those that are under another element).<br>
+                            <span class="bold">Example:</span> <span class="code">ul > li </span>, all li elements that are directly inside the ul is selected, but if the li is contained in a div even if the div is contained in ul, it will not be included.
+                        </li><br>
+                        <li><span class="bold">Descendant Combinator</span> - uses a white space, selects element that are inside the specified element even if it is contained in other element if the element is inside the specified element.<br>
+                            <span class="bold">Example:</span> <span class="code">article div</span> selects all div that are inside the article.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2 id="css-rule-precedence">CSS Rule Precedence</h2>
+                <p> an HTML element may be the subject of the multiple style rules</p>
+                <ul>
+                    <li>when such rules target different properties their effects cascade (i.e, are combined) </li>
+                    <li>when the styles involve the same property, they conflict, and must be resolved such that one style is applied</li>
+                    <li>resolution</li>
+                    <ol>
+                        <li>by <a href="#origin-precedence">origin and importance</a></li>
+                        <li>by specificity - more specific selector will be applied. <br>The selectors are arranged in order of highest to lowest specificity:</li>
+                        <ol>
+                            <li>ID selectors</li>
+                            <li>Class selectors</li>
+                            <li>Type Selectors</li>
+                        </ol>
+                        <p>Note: If the selector is applied in an inline style, the effect of the properties of that selector will be prioritized.</p>
+                        <li>by order - latest declaration will apply</li>
+                    </ol>
+                </ul>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
+
+<a href="https://www.w3.org/standards/webdesign/script.html">https://www.w3.org/standards/webdesign/script.html</a><br>
+<a href="http://www.ecma-international.org/">http://www.ecma-international.org/</a><br>
+<a href="https://www.thoughtco.com/css2-vs-css3-3466978">href="https://www.thoughtco.com/css2-vs-css3-3466978</a><br>
+<a href="https://www.w3.org/TR/CSS/#css-levels">https://www.w3.org/TR/CSS/#css-levels</a><br>
+<a href="https://www.w3.org/TR/CSS2/cascade.html">https://www.w3.org/TR/CSS2/cascade.html</a><br>
+<a href="https://www.w3.org/TR/css3-cascade/#cascading">https://www.w3.org/TR/css3-cascade/#cascading</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule</a><br>
