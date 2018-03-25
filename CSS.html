@@ -111,20 +111,26 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Nested At-rules</h4>
+                    <h4 id="nested-at-rules">Nested At-rules</h4>
                     <p><span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.</p>
                     <ul>
-                        <li>@media</li>
-                        <li>@supports</li>
-                        <li>@document</li>
-                        <li>@page</li>
-                        <li>@font-face</li>
-                        <li>@keyframes</li>
-                        <li>@viewport</li>
-                        <li>@counter-style</li>
-                        <li>@font-feature-values</li>
+                        <li><span class="code bold">@media</span> - allows to apply styles to a specific media query (eg. screen sizes)</li>
+                        <li><span class="code bold">@supports</span> - can be used to check if browser supports a specific feature before applying the styles.</li>
+                        <li><span class="code bold">@document</span> - allows to apply styles to a specific page, this styles will be ignored by the other pages of the website.</li>
+                        <li><span class="code bold">@page</span> - use to layout the printing of the page.</li>
+                        <li><span class="code bold">@font-face</span> - use to add new font that can be used in styling the website.</li>
+                        <li><span class="code bold">@keyframes</span> - use to specify keyframes for an animation which can be applied to a selector.</li>
+                        <li><span class="code bold">@viewport</span> - currently at the Working Draft stage</li>
+                        <li><span class="code bold">@counter-style</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
+                        <li><span class="code bold">@font-feature-values</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
                     </ul>
                 </div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>CSS Selectors</h2>
+                <p>A <span class="bold">selector</span> is a expression which is used to specify which HTML element will the CSS statements will apply. There are </p>
             </div>
         </article>
         <article>
@@ -143,6 +149,7 @@
                             <li>Class selectors</li>
                             <li>Type Selectors</li>
                         </ol>
+                        <p>Note: If the selector is applied in an inline style, the effect of the properties of that selector will be prioritized.</p>
                         <li>by order - latest declaration will apply</li>
                     </ol>
                 </ul>
