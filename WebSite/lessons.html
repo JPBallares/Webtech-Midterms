@@ -21,36 +21,123 @@
     </nav>
     
     <div id="main_content_container">
-        <div id="side_menu">
-            <ul>
-                <li><a data-con="www_con" id="www" href="#">WWW</a></li>
-                <li><a data-con="int_con" id="int" href="#">Internet</a></li> 
-                <li><a href="#">HTTP</a></li> 
-                <li><a href="#">HTTP Methods</a></li> 
-                <li><a href="#">Method Properties</a></li> 
-                <li><a href="#">HTTP Headers</a></li>
-                <li><a href="#">Status Codes</a></li>
-                <li><a href="#">HTML</a></li>
-            </ul>
-        </div>
         
-        <div id="lessons_main_content">
-            <div class="hide" id="www_con">
-                <p>
-                - Collection of web resources and applications. Allows access via the internet. 
-                </p>
-                <p>
-                - Invented by Tim Berners-Lee and Robert Cailliau at CERN(1989).
-                </p>
+        <div id="side_nav_container">
+        <ul class="side_nav">
+            <a data-con="www_con" id="www" href="#"><li>WWW</li></a>
+            <a data-con="int_con" id="int" href="#"><li>INTERNET</li></a>
+            <a data-con="" id="" href="#"><li>HTTP</li></a>
+            
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_01" />
+                <label class="toggle_label" for="toggle_01">HTTP MESSAGES</label>
+                <ul class="sub_menu">
+                    <li><a data-con="" id="" href="#">Request Message</a></li>
+                    <li><a data-con="" id="" href="#">Response Message</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_02" />
+                <label class="toggle_label" for="toggle_02">HTTP METHODS</label>
+                <ul class="sub_menu">
+                    <li>
+                        <input class="toggle" type="checkbox" id="toggle_03" />
+                        <label class="toggle_label" for="toggle_03">Required: </label>
+                        <ul class="sub_menu">
+                            <a data-con="" id="" href="#"><li>GET</li></a>
+                            <a data-con="" id="" href="#"><li>HEAD</li></a>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <input class="toggle" type="checkbox" id="toggle_04" />
+                        <label class="toggle_label" for="toggle_04">Optional: </label>
+                        <ul class="sub_menu">
+                            <a data-con="" id="" href="#"><li>PUT</li></a>
+                            <a data-con="" id="" href="#"><li>DELETE</li></a>
+                            <a data-con="" id="" href="#"><li>OPTIONS</li></a>
+                            <a data-con="" id="" href="#"><li>TRACE</li></a>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <input class="toggle" type="checkbox" id="toggle_05" />
+                        <label class="toggle_label" for="toggle_05">Others: </label>
+                        <ul class="sub_menu">
+                            <a data-con="" id="" href="#"><li>CONNECT</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_06" />
+                <label class="toggle_label" for="toggle_06">METHOD PROPERTIES</label>
+                <ul class="sub_menu">
+                    <li><a data-con="" id="" href="#">Safe Methods</a></li>
+                    <li><a data-con="" id="" href="#">Idempotent Methods</a></li>
+                    <li><a data-con="" id="" href="#">Cacheable Methods</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_07" />
+                <label class="toggle_label" for="toggle_07">HTTP HEADERS</label>
+                <ul class="sub_menu">
+                    <a data-con="" id="" href="#"><li>General Header Fields</li></a>
+                    <a data-con="" id="" href="#"><li>Request Header Fields</li></a>
+                    <a data-con="" id="" href="#"><li>Response Header Fields</li></a>
+                    <a data-con="" id="" href="#"><li>Entity Header Fields</li></a>
+                </ul>
+            </li>
+            
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_08" />
+                <label class="toggle_label" for="toggle_08">STATUS CODES</label>
+                <ul class="sub_menu">
+                    <li><a data-con="" id="" href="#">1XX</a></li>
+                    <li><a data-con="" id="" href="#">2XX</a></li>
+                    <li><a data-con="" id="" href="#">3XX</a></li>
+                    <li><a data-con="" id="" href="#">4XX</a></li>
+                    <li><a data-con="" id="" href="#">5XX</a></li>
+                </ul>
+            </li>
+            
+            <a data-con="" id="" href="#"><li>HTML</li></a>
+        </ul>
+    </div>
+        
+        <div id="lessons_container">
+            <div class="" id="www_con">
+                <section class="lesson_banner www_banner">
+                    <img src="styles/imgs/WWW_white.png">
+                    <p>W W W (World Wide Web)</p>
+                </section>
+                
+                <section class="lesson_content">
+                    <h1>Overview: </h1>
+                    <br>
+                    <img class="developer_pic" src="imgs/Tim%20Berners-Lee.jpg" alt="Tim Berners-Lee">
+                    <p>
+                    WWW stands for World Wide Web is a collection of web resources and applications that identified by Uniform Resource Locators (URLs),  interlinked by  hypertext links that can be access via the internet. World Wide Web was invented by Tim Berners-Lee and co-inventor Robert Cailliau in 1989 at CERN in Geneva. The main goal of Tim Berners-Lee for inventing WWW is for the researcher around the world for them share information.
+                    </p>
+                    
+                </section>
             </div>
             
             <div class="hide" id="int_con">
-                <p>
-                - Global network of networks; a collection of hardware and software(eg hosts, media, protocols).  
-                </p>
-                <p>
-                - Uses internet protocol suite (TCP/IP) to link devices worldwide.
-                </p>
+                <section class="lesson_banner www_banner">
+                    <img src="styles/imgs/WWW_white.png">
+                    <p>W W W (World Wide Web)</p>
+                </section>
+                
+                <section class="lesson_content">
+                    <p>
+                        - Global network of networks; a collection of hardware and software(eg hosts, media, protocols). 
+                        <br>- Uses internet protocol suite (TCP/IP) to link devices worldwide.
+                    </p>
+                </section>
             </div>
         </div>
     </div>
@@ -62,7 +149,6 @@
     </footer>
     
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scroll.js"></script>
     <script src="js/sidemenu.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ c1.addEventListener("click", showContent);
 c2.addEventListener("click", showContent);
 
 function showContent() {
-    var allContent = document.querySelectorAll("#lessons_main_content div");
+    var allContent = document.querySelectorAll("#lessons_container div");
     
     for (var i = 0; i < allContent.length; i++) {
         allContent[i].className = "hide";
