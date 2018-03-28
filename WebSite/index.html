@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="styles/imgs/Logo_SC.png">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Home</title>
+    <title>WebTech | Home</title>
 </head>
 
 <body>
-    
-    <div id="banner">
-        <a href="#">
-            <div id="logo">
-                <img src="styles/imgs/Logo_M.png">
-            </div>
-        </a>
-        
-        <div id="logo_txt">
-            <div id="web_sys"><h1>Web Systems</h1></div> <div id="and_tech"><h1>and Technologies</h1></div>
-        </div>
-    </div>
- 
-    <nav id="main_nav">
-        <div id="nav_container">
+    <nav>
+        <div class="navbar">
             <ul>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="lessons.html">Lessons</a></li>
-                <li><a href="index.html">Home</a></li>
+                <a href="#"><li id="nav_logo"><img src="styles/imgs/Logo_S.png"></li></a>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">Home</a></li>
             </ul>
         </div>
     </nav>
     
-    <div class="temp">
+    <div id="banner">
+        
+            <div id="logo">
+                <img src="styles/imgs/Logo_M.png">
+            </div>
+        
+        
+        <div id="logo_txt">
+            <p><span id="web">Web Systems</span>
+            <br><span id="tech">and Technologies</span></p>
+        </div>
     </div>
     
     <div id="main_content_container">
@@ -40,6 +38,7 @@
             <div id="intro_goal">
                 <h1>Website goals</h1>
                 <hr>
+                <br>
                 <p>
                     This website aims to inform the people that has no basic knowledge of the history and structure of http and html.
                 </p>
@@ -47,43 +46,42 @@
             <div id="intro_who">
                 <h1>Who we are</h1>
                 <hr>
+                <br>
                 <p>
-                    We are students of Saint Louis University(SLU) under the School of Computing Information Science taking up Bachelor of Science major in Computer Science.
+                    We are students of Saint Louis University (SLU) under the School of Computing Information Science taking up Bachelor of Science major in Computer Science.
                 </p>
             </div>
-            
-            <div class="blank"></div>
         </div>
         
         <div id="current_available_lessons">
             <div id="www_pic">
-                <div class="left_arrow">
-                    
-                </div>
+                <div class="left_arrow"></div>
                 
                 <div class="logo_left">
-                    <img src="styles/imgs/WWW_white.png">
-                    <p>WWW</p>
+                        <img src="styles/imgs/WWW_white.png">
+                        <p>WWW</p>
                 </div>
             </div>
             
             <div id="www_rm">
-                <div class="description_right">
+                <div class="description description_right">
                     <p>World Wide Web</p>
-                    <hr>
                     <p>
-                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh massa, pulvinar in sem at, bibendum convallis eros. Ut id massa orci. Curabitur porttitor velit vitae interdum ultrices. Sed efficitur vel erat et lobortis. Aliquam pulvinar dapibus erat. Morbi mattis tortor nec dui placerat posuere. Maecenas eget est eget felis blandit convallis accumsan porttitor enim. Sed interdum risus vitae justo suscipit accumsan.  
                     </p>
+                    
+                    <a href="">Read More</a>
                 </div>
             </div>
             
             <div id="http_rm">
-                <div class="description_left">
+                <div class="description description_left">
                     <p>Hypertext Transfer Protocol</p>
-                    <hr>
                     <p>
-                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh massa, pulvinar in sem at, bibendum convallis eros. Ut id massa orci. Curabitur porttitor velit vitae interdum ultrices. Sed efficitur vel erat et lobortis. Aliquam pulvinar dapibus erat. Morbi mattis tortor nec dui placerat posuere. Maecenas eget est eget felis blandit convallis accumsan porttitor enim. Sed interdum risus vitae justo suscipit accumsan.  
                     </p>
+                    
+                    <a href="">Read More</a>
                 </div>
             </div>
             
@@ -110,18 +108,20 @@
             </div>
             
             <div id="html_rm">
-                <div class="description_right">
+                <div class="description description_right">
                     <p>Hypertext Markup Language</p>
-                    <hr>
                     <p>
-                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh massa, pulvinar in sem at, bibendum convallis eros. Ut id massa orci. Curabitur porttitor velit vitae interdum ultrices. Sed efficitur vel erat et lobortis. Aliquam pulvinar dapibus erat. Morbi mattis tortor nec dui placerat posuere. Maecenas eget est eget felis blandit convallis accumsan porttitor enim. Sed interdum risus vitae justo suscipit accumsan.  
                     </p>
+                    
+                    <a href="">Read More</a>
                 </div>
             </div>
             
+            <div id="css">
+                <p>Cascading Style Sheet (CSS)</p>
+            </div>
         </div>
-        
-        <div id="space_bot"></div>
     </div>
     
     <footer>
@@ -131,5 +131,6 @@
     </footer>
     
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: roboto;
-    display: block;
-}
-
-html {
-     background-color: #1e1f26;
 }
 
 title {
@@ -37,97 +32,106 @@ title {
     src: url(./fonts/roboto.ttf);
 }
 
+@font-face {
+    font-family: 'ananda';
+    src: url(./fonts/ananda.ttf);
+}
+
+
 /*--- Fonts ---*/
+
+
+
+/*----- Navigation Bar -----*/
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar.hide {
+    opacity: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1e1f26;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover {
+    background-color: #414143;
+}
+
+.navbar li:nth-child(2) {
+    margin-right: 5%;
+}
+
+#nav_logo {
+    float: left;
+    margin-left: 5%;
+}
+
+#nav_logo img {
+    width: 80px;
+}
+
+/*----- Effect -----*/
+
+/*----- Effect -----*/
+
+/*----- Navigation Bar -----*/
+
 
 
 /*----- Banner -----*/
 
 #banner {
     width: 100%;
-}
-
-#banner a {
-     text-decoration: none;
-}
-
-#logo {
-    float: left;
-    padding: 2% 0% 1% 5%;
-    color: #fff;
-    width: 15%;
+    height: 100vh;
+    color: white;
+    background-image: url(../styles/imgs/banner_bg.png);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #logo img {
-    width: 100%;
+    width: 15%;
+    margin: 12% 0 0 42.5%;; 
 }
 
 #logo_txt {
-    width: 100%;
-    color: white;
-    font-size: 30px;
-    background-color: #1e1f26;
-    padding: 7% 5% 5% 25%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
 }
 
-#web_sys {
-    float: left;
-    margin-right: 2%;
-}
-
-#web_sys h1{
-    font-size: 80px;
-    font-weight: 100;
+#logo_txt #web {
     font-family: monoton;
-}
-
-#and_tech {
-    float: left;
-}
-
-#and_tech h1{
-    font-family: beon;
     font-weight: 100;
-    margin-top: 5%;
+    font-size: 80px;
 }
+
+#logo_txt #tech{
+    font-family: beon;
+}
+
 
 /*----- Banner -----*/
-
-
-
-/*----- Navigation Bar -----*/
-
-#main_nav ul {
-    clear: both;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #283655;
-}
-
-#main_nav li {
-    float: right;
-}
-
-#main_nav li a {
-    font-size: 20px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#main_nav li a:hover {
-    background-color: #4d648d;
-}
-
-#main_nav li:nth-child(1) {
-    margin-right: 5%;
-}
-
-/*----- Navigation Bar -----*/
 
 
 
@@ -139,47 +143,38 @@ title {
     width: 100%;
 }
 
-/* Home */
 
-#introduction {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #4d648d;
-    color: white;
+#main_content_container #introduction p {
+    font-size: 18px;
     text-align: justify;
 }
 
-#introduction p {
-    font-size: 20px;
-    padding: 5%;
-    line-height: 150%;
+/* Home */
+
+#introduction {
+    color: white;
+    width: 100%;
+    height: 30vh;
 }
 
 #introduction h1 {
-    padding: 3%;
-    font-size: 50px;
-}
-
-.blank {
-    clear: both;
-    height: 1px;
+    font-weight: 100;
 }
 
 #intro_goal {
+    padding: 5% 10% 0 10%;
     float: left;
-    width: 37.8%;
-    padding: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 30%;
+    height: 25vh;
+    background-color: #636469;
 }
 
 #intro_who {
+    padding: 5% 10% 0 10%;
     float: left;
-    width: 37.8%;
-    padding: 1%;
-    margin-right: 5%;
-    padding-left: 5%;
-    border-left: 1px solid white;
+    width: 30%;
+    height: 25vh;
+    background-color: #434448;
 }
 
 .left_arrow {
@@ -252,14 +247,15 @@ title {
 }
 
 .logo_left {
+    width: 90%;
     float: right;
-    margin: 80px 100px 0 0;
+    margin: 80px 0 0 0;
     text-align: center;
 }
 
 .logo_left p {
     color: white;
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: 8px;
 }
 
@@ -268,14 +264,15 @@ title {
 }
 
 .logo_right {
+    width: 90%;
     float: left;
-    margin: 80px 0 0 100px;
+    margin: 80px 0 0 0;
     text-align: center;
 }
 
 .logo_right p {
     color: white;
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: 8px;
 }
 
@@ -285,27 +282,80 @@ title {
     margin: 80px 0 0 90px;
 }
 
-.description_right p:nth-child(1) {
-    font-size: 45px;
-}
-
 .description_left {
     float: right;
     width: 80%;
     margin: 80px 90px 0 0;
 }
 
-.description_left p:nth-child(1) {
+.description p:nth-child(1) {
     font-size: 45px;
+}
+
+.description p:nth-child(2) {
+    font-size: 20px;
+    text-align: justify;
+    padding: 2% 5% 5% 5%; 
+}
+
+.description a {
+    color: black;
+    float: right;
+    padding: 2% 4%;
+    text-decoration: none;
+    border: 2px solid black;
+    margin-right: 5%;
+}
+
+#css {
+    padding:10%;
+    color: white;
+    clear: both;
+    background-color: #636469;
+}
+
+#css p:nth-child(1) {
+    font-size: 90px;
+    font-family: ananda;
 }
 
 /* Home */
 
-#space_bot {
-    clear: both;
-    height: 5vh;
-    width: 100%;
+/* Lessons */
+
+#side_menu {
+    float: left;
+    width: 20%;
+    background-color: #4d648d;
+    text-align: center;
 }
+
+#side_menu ul {
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    margin: 40% 0 0 15%;
+    list-style-type: none;
+}
+
+#side_menu ul li {
+    padding: 5% 0 5% 0;
+    margin-bottom: 5%;
+}
+
+#lessons_main_content {
+    float: left;
+    width: 80%;
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #ffffff;
+}
+
+.hide {
+    display: none;
+}
+
+/* Lessons */
 
 /*----- Contents -----*/
 
@@ -327,105 +377,3 @@ footer {
 }
 
 /*----- Footer -----*/
-
-
-
-/*----- JQuery -----*/
-
-.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/*----- JQuery -----*/
-
-
-
-/*----- Media Queries -----*/
-
-@media (max-width: 1440px){
-    
-    #logo_txt {
-        font-size: 25px;
-        padding: 6% 5% 5% 22%;
-    }
-    
-    #web_sys h1{
-        font-size: 60px;
-    }
-    
-    #introduction p {
-        font-size: 15px;
-        padding: 2.5%;
-    }
-    
-    #introduction h1 {
-        font-size: 40px;
-        padding: 1.5%;
-    }
-    
-    .logo_left img {
-        width: 200px;
-    }
-
-    .logo_left {
-        float: right;
-        margin: 100px 100px 0 0;
-        text-align: center;
-    }
-
-    .logo_left p {
-        color: white;
-        font-size: 60px;
-        letter-spacing: 8px;
-    }
-
-    .logo_right img {
-        width: 200px;
-    }
-
-    .logo_right {
-        float: left;
-        margin: 100px 0 0 100px;
-        text-align: center;
-    }
-
-    .logo_right p {
-        color: white;
-        font-size: 60px;
-        letter-spacing: 8px;
-    }
-    
-}
-
-@media (max-width: 1024px){
-    
-    #logo_txt {
-        font-size: 18px;
-    }
-    
-    #web_sys h1{
-        font-size: 45px;
-    }
-    
-    #introduction p {
-        font-size: 10px;
-    }
-    
-    #introduction h1 {
-        font-size: 30px;
-    }
-    
-    .description_right p:nth-child(1) {
-        font-size: 20px;
-    }
-    
-    .description_left p:nth-child(1) {
-        font-size: 20px;
-    }
-    
-}
-
-/*----- Media Queries-----*/
-
