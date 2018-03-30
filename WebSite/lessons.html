@@ -15,7 +15,7 @@
                 <a href="#"><li id="nav_logo"><img src="styles/imgs/Logo_S.png"></li></a>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Lessons</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </div>
     </nav>
@@ -26,14 +26,14 @@
         <ul class="side_nav">
             <a data-con="www_con" id="www" href="#"><li>WWW</li></a>
             <a data-con="int_con" id="int" href="#"><li>INTERNET</li></a>
-            <a data-con="" id="" href="#"><li>HTTP</li></a>
+            <a data-con="http_con" id="http" href="#"><li>HTTP</li></a>
             
             <li>
                 <input class="toggle" type="checkbox" id="toggle_01" />
-                <label class="toggle_label" for="toggle_01">HTTP MESSAGES</label>
+                <label class="toggle_label" for="toggle_01"><a a data-con="http_con_1" id="message" href="#">HTTP MESSAGES</a></label>
                 <ul class="sub_menu">
-                    <li><a data-con="" id="" href="#">Request Message</a></li>
-                    <li><a data-con="" id="" href="#">Response Message</a></li>
+                    <li><a data-con="http_con_2" id="req_message" href="#">Request Message</a></li>
+                    <li><a data-con="http_con_3" id="res_message" href="#">Response Message</a></li>
                 </ul>
             </li>
             
@@ -45,8 +45,8 @@
                         <input class="toggle" type="checkbox" id="toggle_03" />
                         <label class="toggle_label" for="toggle_03">Required: </label>
                         <ul class="sub_menu">
-                            <a data-con="" id="" href="#"><li>GET</li></a>
-                            <a data-con="" id="" href="#"><li>HEAD</li></a>
+                            <a data-con="http_con_4" id="get" href="#"><li>GET</li></a>
+                            <a data-con="http_con_5" id="head" href="#"><li>HEAD</li></a>
                         </ul>
                     </li>
                     
@@ -54,10 +54,10 @@
                         <input class="toggle" type="checkbox" id="toggle_04" />
                         <label class="toggle_label" for="toggle_04">Optional: </label>
                         <ul class="sub_menu">
-                            <a data-con="" id="" href="#"><li>PUT</li></a>
-                            <a data-con="" id="" href="#"><li>DELETE</li></a>
-                            <a data-con="" id="" href="#"><li>OPTIONS</li></a>
-                            <a data-con="" id="" href="#"><li>TRACE</li></a>
+                            <a data-con="http_con_6" id="put" href="#"><li>PUT</li></a>
+                            <a data-con="http_con_7" id="delete" href="#"><li>DELETE</li></a>
+                            <a data-con="http_con_8" id="options" href="#"><li>OPTIONS</li></a>
+                            <a data-con="http_con_9" id="trace" href="#"><li>TRACE</li></a>
                         </ul>
                     </li>
                     
@@ -65,7 +65,7 @@
                         <input class="toggle" type="checkbox" id="toggle_05" />
                         <label class="toggle_label" for="toggle_05">Others: </label>
                         <ul class="sub_menu">
-                            <a data-con="" id="" href="#"><li>CONNECT</li></a>
+                            <a data-con="http_con_10" id="connect" href="#"><li>CONNECT</li></a>
                         </ul>
                     </li>
                 </ul>
@@ -75,9 +75,9 @@
                 <input class="toggle" type="checkbox" id="toggle_06" />
                 <label class="toggle_label" for="toggle_06">METHOD PROPERTIES</label>
                 <ul class="sub_menu">
-                    <li><a data-con="" id="" href="#">Safe Methods</a></li>
-                    <li><a data-con="" id="" href="#">Idempotent Methods</a></li>
-                    <li><a data-con="" id="" href="#">Cacheable Methods</a></li>
+                    <li><a data-con="http_con_11" id="safe" href="#">Safe Methods</a></li>
+                    <li><a data-con="http_con_12" id="idempotent" href="#">Idempotent Methods</a></li>
+                    <li><a data-con="http_con_13" id="cacheable" href="#">Cacheable Methods</a></li>
                 </ul>
             </li>
             
@@ -85,59 +85,1070 @@
                 <input class="toggle" type="checkbox" id="toggle_07" />
                 <label class="toggle_label" for="toggle_07">HTTP HEADERS</label>
                 <ul class="sub_menu">
-                    <a data-con="" id="" href="#"><li>General Header Fields</li></a>
-                    <a data-con="" id="" href="#"><li>Request Header Fields</li></a>
-                    <a data-con="" id="" href="#"><li>Response Header Fields</li></a>
-                    <a data-con="" id="" href="#"><li>Entity Header Fields</li></a>
+                    <a data-con="http_con_14" id="general" href="#"><li>General Header Fields</li></a>
+                    <a data-con="http_con_15" id="request" href="#"><li>Request Header Fields</li></a>
+                    <a data-con="http_con_16" id="response" href="#"><li>Response Header Fields</li></a>
+                    <a data-con="http_con_17" id="entity" href="#"><li>Entity Header Fields</li></a>
+                    <a data-con="http_con_18" id="content" href="#"><li>Content Negotiation</li></a>
+                    <a data-con="http_con_19" id="connection" href="#"><li>Connection Management</li></a>
+                    <a data-con="http_con_20" id="range" href="#"><li>Range Requests</li></a>
+                    <a data-con="http_con_21" id="authentication" href="#"><li>Authentication and Authorization</li></a>
+                    <a data-con="http_con_22" id="conditionals" href="#"><li>Conditionals</li></a>
                 </ul>
             </li>
             
             <li>
                 <input class="toggle" type="checkbox" id="toggle_08" />
-                <label class="toggle_label" for="toggle_08">STATUS CODES</label>
+                <label class="toggle_label" for="toggle_08"><a data-con="http_con_23" id="status" href="#">STATUS CODES</a></label>
                 <ul class="sub_menu">
-                    <li><a data-con="" id="" href="#">1XX</a></li>
-                    <li><a data-con="" id="" href="#">2XX</a></li>
-                    <li><a data-con="" id="" href="#">3XX</a></li>
-                    <li><a data-con="" id="" href="#">4XX</a></li>
-                    <li><a data-con="" id="" href="#">5XX</a></li>
+                    <li><a data-con="http_con_24" id="1xx" href="#">1XX</a></li>
+                    <li><a data-con="http_con_25" id="2xx" href="#">2XX</a></li>
+                    <li><a data-con="http_con_26" id="3xx" href="#">3XX</a></li>
+                    <li><a data-con="http_con_27" id="4xx" href="#">4XX</a></li>
+                    <li><a data-con="http_con_28" id="5xx" href="#">5XX</a></li>
                 </ul>
             </li>
             
-            <a data-con="" id="" href="#"><li>HTML</li></a>
+            <li>
+                <input class="toggle" type="checkbox" id="toggle_09" />
+                <label class="toggle_label" for="toggle_09"><a data-con="html_con" id="html" href="#">HTML</a></label>
+                <ul class="sub_menu">
+                    <li><a data-con="html_element" id="element" href="#">Elements</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
         
         <div id="lessons_container">
-            <div class="" id="www_con">
-                <section class="lesson_banner www_banner">
+            <section class="hide" id="www_con">
+                <div class="lesson_banner www_banner">
                     <img src="styles/imgs/WWW_white.png">
                     <p>W W W (World Wide Web)</p>
-                </section>
+                </div>
                 
-                <section class="lesson_content">
-                    <h1>Overview: </h1>
-                    <br>
+                <div class="lesson_content">
+                    <h1>Overview : </h1>
                     <img class="developer_pic" src="imgs/Tim%20Berners-Lee.jpg" alt="Tim Berners-Lee">
                     <p>
                     WWW stands for World Wide Web is a collection of web resources and applications that identified by Uniform Resource Locators (URLs),  interlinked by  hypertext links that can be access via the internet. World Wide Web was invented by Tim Berners-Lee and co-inventor Robert Cailliau in 1989 at CERN in Geneva. The main goal of Tim Berners-Lee for inventing WWW is for the researcher around the world for them share information.
                     </p>
-                    
-                </section>
-            </div>
+                </div>
+            </section>
             
-            <div class="hide" id="int_con">
-                <section class="lesson_banner www_banner">
+            <section class="hide" id="int_con">
+                <div class="lesson_banner www_banner">
                     <img src="styles/imgs/WWW_white.png">
                     <p>W W W (World Wide Web)</p>
-                </section>
+                </div>
                 
-                <section class="lesson_content">
+                <div class="lesson_content">
+                    <h1>Internet : </h1>
+                    <img class="topic_pic" src="imgs/Internet.jpg" alt="Internet">
                     <p>
-                        - Global network of networks; a collection of hardware and software(eg hosts, media, protocols). 
+                        - Global network of networks.
+                        <br>- A collection of hardware and software (e.g. Hosts, Media, Protocols). 
                         <br>- Uses internet protocol suite (TCP/IP) to link devices worldwide.
                     </p>
-                </section>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                
+                <div class="lesson_content">
+                    <h1>Overview : </h1>
+                    <img class="developer_pic" src="imgs/Tim%20Berners-Lee.jpg" alt="Tim Berners-Lee">
+                    <p>
+                      HTTP stands for Hypertext Transfer Protocol that is used by the web. It defines how the information is transmitted and formatted. HTTP is an application layer communications protocol used to access resources (Hypertext/Hypermedia) on the World Wide Web. Develop by Tim Berners-Lee in 1989 at CERN. Port 80 is the default port.  
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_1">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>HTTP Message : </h1>
+                    <p>
+                        HTTP Message is use to communicate between the client and the server. The client sends a request message and the server will respond sending a response message corresponding to the request of the client. The Request messages is automatically created when accessing resources using browsers, but it can be create manually. The Response message is also automatically created but it will depend on the server's configuration.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_2">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Request Message : </h1>
+                    <p>
+                        Request Message is a message sent by the client to the server in order to access resources. It is compose of Request Line, Message Headers, Empty Line (CRLF) , and Pay Load or Body.
+                    </p>
+                    
+                    
+                    <h1>Request Message Parts : </h1>
+                    <h2>Request Line</h2>
+                    <p>
+                        - Compose of request method, request target, and protocol version.
+                    </p>
+                    
+                    <h3>Request Method</h3>
+                    <p>
+                        - It informs the server what the client wants to do with the resources.
+                    </p>
+                    
+                    <h3>Request Target</h3>
+                    <p>
+                        - The URI or Uniform Resource Identifier that identifies the resources that the client wants to access is located ( asterisk "*" can be used to refer to the server itself ). 
+                    </p>
+                    
+                    <h3>Protocol Version</h3>
+                    <p>
+                        - Provides the version of the HTTP that the client uses, so that the server knows what HTTP version to return to the client. (E.g HTTP/1.1).
+                    </p>
+                    
+                    
+                    <h2>Request Message Headers</h2>
+                    <p>
+                        - This allows client to provide more information to the server so that the server will be able to know what the client is capable of doing or what the client can handle. This information is placed in Request Header Fields.
+                    </p>
+                    
+                    
+                    <h2>Empty Line</h2>
+                    <p>
+                        - Indicates that the end of the Header Fields has been reached.
+                    </p>
+                    
+                    
+                    <h2>Message Body or Payload</h2>
+                    <p>
+                        - An optional part of a request message that contains a resource which can be sent to the server (using PUT method) or updated by the server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_3">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Response Message : </h1>
+                    <p>
+                        Response Message is a message created by the server to answer the request of the client. It is compose Status Line, Message Headers, Empty Line (CRLF), and the Message Body or Payload.
+                    </p>
+                    
+                    <h1>Response Message Parts : </h1>
+                    <h2>Status Line </h2>
+                    <p>
+                        - Compose of Protocol Version, Status Code, and Status Description.  
+                    </p>
+                    
+                    <h2>Protocol Version</h2>
+                    <p>
+                        - Provides the HTTP version of the Response Message.
+                    </p>
+
+                    <h2>Status Code</h2>
+                    <p>
+                        - Code compose of 3 digit that describes what happen to the request of the client, if it is successfulor failure. Some examples are 200, 404, 304.
+                    </p>
+
+                    <h2>Status Description</h2>
+                    <p>
+                        - A brief description of the Status Code (human-readable). Examples: Ok, Not Found, Not modified.
+
+                        Example of Status Line: HTTP/1.1 200 OK, HTTP/1.1 404 Not Found, HTTP/1.1 304 Not Modified
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_4">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>GET : </h1>
+                    <p>
+                        - Retrieve full resources from the server, can also be used to submit information but it is not advisable because the information can be seen on the URI.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_5">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>HEAD : </h1>
+                    <p>
+                        - Retrieve meta-data information of the resources, without the message body or the content of the resources.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_6">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>PUT : </h1>
+                    <p>
+                        - Submit new resources on the server, or edit an existing resource in the server, the resources to be sent or modified is placed in the message body.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_7">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>DELETE : </h1>
+                    <p>
+                        - Remove the resources that from the server that is identified by the URI specified by the client. This will fail if the server doesn't have the resource identified by the client.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_8">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>OPTIONS : </h1>
+                    <p>
+                        - Shows the possible method that can be applied to the resources identified by the URI. This can also be applied to the server itself ( by using * as the target ) this will show the allowed method by the server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_9">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>TRACE : </h1>
+                    <p>
+                        - This will allow to track down where did the request message pass before getting into the server, this can also help client to see the exact message that arrives at the server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_10">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CONNECT : </h1>
+                    <p>
+                        - Use proxy to establish tunnel to the remote server. It usually is being used in secured connection.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_11">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Safe Methods : </h1>
+                    <p>
+                        - This methods are only used as retrieval of resources ( read-only ), therefor this request message will not affect the server or the other client accessing the same resources and can be considered safe. Methods that are unsafe should be disabled, except for some special cases, by the server to avoid client from doing unnecessary action and the server can work properly.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_12">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Idempotent Method : </h1>
+                    <p>
+                        - This methods are considered idempotent because the expected result of this request methods to the server will be the same even if it is requested single time or it is requested multiple times(except caching and errors). This can be identified easily because when failure occurs in the communication the client can just resend the request to the server and expect that the result will be done.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_13">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Cacheable Methods : </h1>
+                    <p>
+                        - It is possible to store the current request and reuse it when other client request with the same request message. In some cases POST request method will not be cache depending on the configuration of the server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_14">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>General Headers : </h1>
+                    <p>
+                        - Is being used by the both client and server in sending messages ( request and response messages ) and has no relation to the body is is being sent. Some examples are Date, Cache Control, Pragma, Connection, Transfer Encoding, Upgrade, and Warning.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_15">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Request Headers : </h1>
+                    <p>
+                        - Provide information about the client or the resource that the client want to access. Some examples are Accept, Accept-*, If-*, Cookie, User-Agent, Host and Referer.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_16">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Response Headers : </h1>
+                    <p>
+                        - Provide information about the response being sent or the information about the server. Some examples are Age, Location, and Server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_17">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Entity Headers : </h1>
+                    <p>
+                        - Is used to provide information about the message body or payload, like content length and content type. Some examples are Content-Type, Content-Length, Content-Language and Content-Encoding.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_18">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Content Negotiation : </h1>
+                    <p>
+                        - allows HTTP clients to negotiate for the resources that it prefer using and the server can provide for the available
+                    </p>
+                    
+                    
+                    <h2>Accept</h2>
+                    <p>
+                        - Provide the type of the resources to be accessed by the client.
+                    </p>
+                    
+                    <h2>Accept-Charset</h2>
+                    <p>
+                        - Provide the information on character sets that can be interpreted by the client.
+                    </p>
+                    
+                    <h2>Accept-Encoding</h2>
+                    <p>
+                        - Provide the type of encoding that can be interpreted by the client, this usually refers to the compression that the server can handle. 
+                    </p>
+                    
+                    <h2>Accept-Language</h2>
+                    <p>
+                        - Provide the expected language to be accessed by the client. The client should provide a sequence of language sin case the first language is not available.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_19">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Connection Management : </h1>
+                    
+                    
+                    <h2>Connection</h2>
+                    <p>
+                        - Manage the network connection to open or close the current communication after it is finished. 
+                    </p>
+                    
+                    <h2>Keep-Alive</h2>
+                    <p>
+                        - Set how long a connection can stay open after the communication is finished.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_20">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Range Requests : </h1>
+                    <p>
+                        - Allow the client to access part of the resources.
+                    </p>
+                    
+                    
+                    <h2>Range</h2>
+                    <p>
+                    - Included in the client request, to specify a partial request of the resource. 
+                    </p>
+                    
+                    <h2>Accept-Range</h2>
+                    <p>
+                    - Indicates if the server allows partial request on the resources.
+                    </p>
+                    
+                    <h2>If-Range</h2>
+                    <p>
+                    - Provides condition for the range request, range request will only be successful if the condition is met. 
+                    </p>
+                    
+                    <h2>Content-Range</h2>
+                    <p>
+                    - Specify part of the resources to be accessed.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_21">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Authentication and Authorization : </h1>
+                    <p>
+                        - Allows the server to restrict resources that can be accessed by the client, and allows the client to provide their credentials to access the file.
+                    </p>
+
+                    
+                    <h2>WWW-Authenticate</h2>
+                    <p>
+                        - Describes how the client can access the resources. 
+                    </p>
+                    
+                    <h2>Authorization</h2>
+                    <p>
+                        - Provides the type of authentication (Basic Authentication, Digest Authentication) and the client credentials. The credentials is usually encrypted. 
+                    </p>
+                    
+                    <h2>Proxy-Authenticate</h2>
+                    <p>
+                        - Describes how the client can be access the resources in a Proxy Server.
+                    </p>
+                    
+                    <h2>Proxy-Authorization</h2>
+                    <p>
+                        - Provides the type of authentication ( Basic Authentication, Digest Authentication ) and the client credentials in a proxy server.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_22">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Conditionals : </h1>
+                    <p>
+                        - Specify conditions that must be met in order for the client to access the resources or in order for the server to send the response.
+                    </p>
+                    
+                    
+                    <h2>Last-Modified</h2>
+                    <p>
+                    - Provides the date of modification of the resources, it can be used to validate the client's cache and the server's resource.
+                    </p>
+                    
+                    <h2>Etag</h2>
+                    <p>
+                    - This uniquely identify the resource's version, this will be used as a condition when checking for client's cache and the server's resource. 
+                    </p>
+                    
+                    <h2>If-Match</h2>
+                    <p>
+                    - A condition that checks if the Etags of the client's caches matches the Etags of the resources being accessed before doing the operation. 
+                    </p>
+                    
+                    <h2>If-None-Match</h2>
+                    <p>
+                    - A condition that checks if the Etags of the client's caches didn't match any of the Etags in the servers resources. Usually used to update the cache of the client or to prevent duplication of resources. 
+                    </p>
+                    
+                    <h2>If-Modified-Since</h2>
+                    <p>
+                    - A condition that checks if the resource is modified since a given date. This can help to determine if the cache is out of date. 
+                    </p>
+                    
+                    <h2>If-Unmodified-Since</h2>
+                    <p>
+                    -A condition that checks if the resources is not modified since a given date.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_23">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Status Codes : </h1>
+                    <p>
+                        - Values of the http requests.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_24">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>1XX Informational</h1>
+                    <p>
+                        - Provisional response. 
+                        <br>- No required headers.
+                    </p>
+
+                    
+                    <h2>100 Continue</h2>
+                    <p>
+                    - Client should continue its requests. 
+                    <br>- Client should should send the remaining requests.
+                    </p>
+
+                    <h2>101 Switching Protocols</h2>
+                    <p>
+                    - The requester asked the server to switch protocols and acknowleding that it will do so.
+                    </p>
+
+                    <h2>102 Processing ( WebDAV; RFC 2518 )</h2>
+                    <p>
+                    - The server has received the processing request but no response is available yet.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_25">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>2xx Success : </h1>
+                    <p>
+                        - Server understands the request of clients, accepts and processed it successfully.
+                    </p>
+
+                    
+                    <h2>200 OK</h2>
+                    <p>
+                        - The request was successful.
+                    </p>
+
+                    <h2>201 Created</h2>
+                    <p>
+                        - Created a new resource and fulfilled.
+                    </p>
+
+                    <h2>202 Accepted</h2>
+                    <p>
+                        - Process has been accepted but not completed.
+                    </p>
+
+                    <h2>203 Non-Authoritative Information ( since HTTP/1.1 )</h2>
+                    <p>
+                        - Successfully processed the request but the information came from another source.
+                    </p>
+
+                    <h2>204 No Content</h2>
+                    <p>
+                        - Successfully processed the request but no contents returned.
+                    </p>
+
+                    <h2>205 Reset Content</h2>
+                    <p>
+                        - Successfully processed the request but no contents returned. 
+                        <br>- This requires the requester to reset the document view.
+                    </p>
+
+                    <h2>206 Partial Content ( RFC 7233 )</h2>
+                    <p>
+                        - Delivers only part of a resource due to a range header sent by the client.
+                    </p>
+
+                    <h2>207 Multi-Status ( WebDAV; RFC 4918 )</h2>
+                    <p>
+                        - It can contain number of separate response codes, depending on how many sub-requests were made.
+                    </p>
+
+                    <h2>208 Already reported ( WebDAV; RFC 5842  )</h2>
+                    <p>
+                        - DAV agreement have formerly been counted and listed in an earlier reply to the request and aren't being incorporated any more.
+                    </p>
+
+                    <h2>226 IM Used ( RFC 3229 )</h2>
+                    <p>
+                        - The server fulfilled a request for the source, however, the response is a demonstration of the resul of at least one or more instance-manipulation assigned to the current instance.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_26">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>3XX Redirection : </h1>
+                    <p>
+                        - Clients must take additional action to complete the request.
+                    </p>
+                    
+                    
+                    <h2>300 Multiple Choices</h2>
+                    <p>
+                        - Indicates multiple options for the resource that the client may follow.
+                    </p>
+
+                    <h2>301 Moved Permanently</h2>
+                    <p>
+                        - This and all future requests should be directed to the selected URL.
+                    </p>
+
+                    <h2>302 Found</h2>
+                    <p>
+                        - The requested resource resides temporarily under a different URI.
+                    </p>
+
+                    <h2>303 See Other ( since HTTP/1.1 )</h2>
+                    <p>
+                        - The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource. This method exists primarily to allow the output of a POST-activated script to redirect the user agent to a selected resource. The new URI is not a substitute reference for the originally requested resource.
+                    </p>
+
+                    <h2>304 Not Modified ( RFC 7232 )</h2>
+                    <p>
+                        - Indicates the resource has not been modified since last requested.
+                    </p>
+
+                    <h2>305 Use Proxy (  since HTTP/1.1 )</h2>
+                    <p>
+                        - The requested resource is only available through a proxy.
+                    </p>
+
+                    <h2>306 Switch Proxy</h2>
+                    <p>
+                        - This status response is no longer in use.
+                    </p>
+
+                    <h2>307 Temporary Redirect ( since HTTP/1.1 )</h2>
+                    <p>
+                        - The requested resource resides temporarily under a different URI.
+                    </p>
+
+                    <h2>308 Permanent Redirect ( RFC 7538 )</h2>
+                    <p>
+                        - Indicates that the current request and all forthcoming requests should be repeated using another URI.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_27">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>4xx Client Error : </h1>
+                    <p>
+                        - Intended for the cases which the client seems to have erred.
+                    </p>
+
+                    <h2>400 Bad Request</h2>
+                    <p>
+                        - The request cannot be fulfilled due to bad syntax.
+                    </p>
+
+                    <h2>401 Unauthorized ( RFC 7235 )</h2>
+                    <p>
+                        - The request requires user authentication.
+                    </p>
+
+                    <h2>402 Payment Required</h2>
+                    <p>
+                        - Reserved for future use.
+                    </p>
+
+                    <h2>403 Forbidden</h2>
+                    <p>
+                        - Request was invalid.
+                    </p>
+
+                    <h2>404 Not Found</h2>
+                    <p>
+                        - The requested resource could not be found but may be available again in the future.
+                    </p>
+
+                    <h2>405 Method Not Allowed</h2>
+                    <p>
+                        - A request was made of a resource using a request method not supported by that resource.
+                    </p>
+
+                    <h2>406 Not Acceptable</h2>
+                    <p>
+                        - The requested resource is only capable of generating content not acceptable according to the Accept headers sent in the request.
+                    </p>
+
+                    <h2>407 Proxy Authentication Required ( RFC 7235 )</h2>
+                    <p>
+                        - The client must first authenticate itself with the proxy.
+                    </p>
+
+                    <h2>408 Request Time-out</h2>
+                    <p>
+                        - This type of response means that the server has timed out while waiting for the request.
+                    </p>
+
+                    <h2>409 Conflict</h2>
+                    <p>
+                        - Indicates that the request could not be processed because of conflict in the request, such as an edit conflict.
+                    </p>
+
+                    <h2>410 Gone</h2>
+                    <p>
+                        - The request resource has been permanently removed.
+                    </p>
+
+                    <h2>411 Length Required</h2>
+                    <p>
+                        - Refuses the request of invalid Content-Length.
+                    </p>
+
+                    <h2>412 Precondition Failed ( RFC 7232 )</h2>
+                    <p>
+                        - Indicates that access to the target resource has been denied.
+                    </p>
+
+                    <h2>413 Payload Too Large ( RFC 7231 )</h2>
+                    <p>
+                        - The request entity is large and the server is not willing to process.
+                    </p>
+
+                    <h2>414 URI Too Long ( RFC 7231 )</h2>
+                    <p>
+                        - The request URI is too large and the server is not willing to interpret.
+                    </p>
+
+                    <h2>415 Unsupported Media Type</h2>
+                    <p>
+                        - The entity is not valid format for the requested method and not supported by the request resource.
+                    </p>
+
+                    <h2>416 Range Not Satisfiable ( RFC 7233 )</h2>
+                    <p>
+                        - A server cannot serve the requested ranges. 
+                        <br>- Occurs in most webtrafic.
+                    </p>
+
+                    <h2>417 Expectation Failed</h2>
+                    <p>
+                        - The request's Expect header could not be met.
+                    </p>
+
+                    <h2>418 I'm a teapot ( RFC 2324 )</h2>
+                    <p>
+                        - The server refuses to brew coffee because it is a teapot. This was originated in Hyper Text Coffee Pot Control Protocol.
+                    </p>
+
+                    <h2>421 Misdirected Request ( RFC 7540 )</h2>
+                    <p>
+                        - The request was directed at a server that is not able to produce a response.
+                    </p>
+
+                    <h2>422 Unprocessable Entity ( WebDAV; RFC 4918 )</h2>
+                    <p>
+                        - It accepts the request but unable to process the contained instruction.
+                    </p>
+
+                    <h2>423 Locked ( WebDAV; RFC 4918 )</h2>
+                    <p>
+                        - The destination that is being accessed is locked.
+                    </p>
+
+                    <h2>424 Failed Dependency ( WebDAV; RFC 4918 )</h2>
+                    <p>
+                        - The request failed because on another request that failed.
+                    </p>
+
+                    <h2>426 Upgrade Required</h2>
+                    <p>
+                        - The server will only accept the request after upgrading the needed protocol.
+                    </p>
+
+                    <h2>428 Precondition Required ( RFC 6585 )</h2>
+                    <p>
+                        - The server requires the request to be conditional.
+                    </p>
+
+                    <h2>429 Too Many Requests ( RFC 6585 )</h2>
+                    <p>
+                        - The user give too many request at the given amount time.
+                    </p>
+
+                    <h2>431 Request Header Fields Too Large ( RFC 6585 )</h2>
+                    <p>
+                        - The server is unwilling to process the request because some or all the headers are too large.
+                    </p>
+
+                    <h2>451 Unavailable For Legal Reasons</h2>
+                    <p>
+                        - The server is denying access to the resource as a consequence of a legal reasons.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="http_con_28">
+                <div class="lesson_banner http_banner">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>H T T P (Hypertext Transfer Protocol)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>5xx Server Error</h1>
+                    <p>
+                        - The server is aware that it is on error or is incapable of performing the request.
+                        <br>- It explains also if it is temporary or permanent condition.
+                    </p>
+
+                    <h2>500 Internal Server Error</h2>
+                    <p>
+                        - The server encountered an unexpected condition that prevented it from fulfilling the request.
+                    </p>
+
+                    <h2>501 Not Implemented</h2>
+                    <p>
+                        - The server do not recognised or lacks the ability to perform the request.
+                    </p>
+
+                    <h2>502 Bad Gateway</h2>
+                    <p>
+                        - The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+                    </p>
+
+                    <h2>503 Service Unavailable</h2>
+                    <p>
+                        - The server is temporarily unavailable.
+                    </p>
+                    
+                    <h2>504 Gateway Time-out</h2>
+                    <p>
+                        - The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.
+                    </p>
+
+                    <h2>505 HTTP Version Not Supported</h2>
+                    <p>
+                        -The version of the HTTP is not supported by the server.
+                    </p>
+
+                    <h2>506 Variant Also Negotiates ( RFC 2295 )</h2>
+                    <p>
+                        - The chosen variant resource is configured to engage in transparent content negotiation itself.
+                    </p>
+
+                    <h2>507 Insufficient Storage ( WebDAV; RFC 4918 )</h2>
+                    <p>
+                        - The server is unable to store the representation needed to complete the request.
+                    </p>
+
+                    <h2>508 Loop Detected ( WebDAV; RFC 5842 )</h2>
+                    <p>
+                        - The server detected an infinite loop while processing the request.
+                    </p>
+
+                    <h2>510 Not Extended ( RFC 2774 )</h2>
+                    <p>
+                        - The extensions to the request are required for the server to process it.
+                    </p>
+
+                    <h2>511 Network Authentication Required ( RFC 6585 )</h2>
+                    <p>
+                        - The client needs to authenticate to gain network access.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="html_con">
+                <div class="lesson_banner html_banner">
+                    <img src="styles/imgs/HTML_white.png">
+                    <p>H T M L (Hypertext Markup Language)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Hypertext Markup Language : </h1>
+                    <p>
+                        - Used to markup document in www Application SGML( Standard Generalized Markup Language ).
+                        <br>- Language used to define markup language structure, content, and presentation.
+                    </p>
+                    
+                    <h2>HTML 2.0 ( Jan 1997 )</h2>
+                    <p>
+                        - Created by tim Berners-Lee, Dan Connolly, Karen Muldrow.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="html_element">
+                <div class="lesson_banner html_banner">
+                    <img src="styles/imgs/HTML_white.png">
+                    <p>H T M L (Hypertext Markup Language)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Elements : </h1>
+                    <p>
+                        Document Structure, Anchor, Block Formatting, List, Information type and Character Formatting, Image, Form, Character Data
+                    </p>
+
+                    <p>
+                        3.2(Dec 1997)<br>
+                        New elements:<br>
+                            Head<br>
+                                title &lt;TITLE&gt;, style &lt;STYLE&gt;, script &lt;SCRIPT&gt;, isindex &lt;ISINDEX&gt;, base &lt;BASE&gt;, meta &lt;META&gt;, link &lt;LINK&gt;<br>
+                            Body<br>
+                                Headings (H1-H6)
+                                address &lt;ADDRESS&gt;
+                                Block level
+                                    paragraph &lt;p&gt;, Unordered List&lt;ul&gt;, Ordered List &lt;ol&gt;<br><br>
+
+                        4.0(Dec 1999)<br>
+                        New Elements:<br>
+                            Insert &lt;INS&gt;, Delete &lt;DEL&gt;, Acronym &lt;ACRONYM&gt;, Legend &lt;LEGEND&gt;, Column group &lt;COLGROUP&gt;Button &lt;BUTTON&gt;, Fieldset &lt;FIELDSET&gt;
+                        <br><br>
+                        Depreciated Elements:<br>
+                        &lt;applet&gt;<br>
+                        &lt;basefont&gt;<br>
+                        &lt;dir&gt;<br>
+                        &lt;center&gt;<br>
+                        &lt;dir&gt;<br>
+                        &lt;font&gt;<br>
+                        &lt;isindex&gt;<br>
+                        &lt;menu&gt;<br>
+                        &lt;strike&gt;<br><br>
+
+                        Dead Elements:
+                        &lt;listing&gt;<br>
+                        &lt;plaintext&gt;<br>
+                        &lt;xmp&gt;<br><br>
+
+                        4.01(Dec 1999)<br><br>
+
+                        5.0(September 2014)<br>
+                            Some new features:<br>
+                            video &lt;video&gt;, track &lt;track&gt;, section &lt;section&gt;, main &lt;main&gt;, audio &lt;audio&gt; <br><br>
+
+                            Some depreciated features:<br>
+                            applet &lt;applet&gt;, table width &lt;table width=""&gt;, plaintext, &lt;plaintext&gt;, image align &lt;img align=""&gt;, font &lt;font&gt;
+
+                        5.1(Nov 2016)<br>
+                        5.2(W3C recomendation Dec 2017)<br>
+
+                        to know all the features that has been added or depreciated visit <a href="https://html.com/html5/">This site</a>
+                    </p>
+                    
+                    <div id="table_html">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Start tag</th>
+                                <th>End Tag</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>Text Headers</td>
+                                <td> &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc... </td>
+                                <td> &lt;/h1&gt;, &lt;/h2&gt;, &lt;/h3&gt;, etc... </td>
+                                <td> Denotes the header level of content. </td>
+                            </tr>
+                            <tr>
+                                <td>Paragraph</td>
+                                <td> &lt;p&gt;</td>
+                                <td> &lt;/p&gt; </td>
+                                <td> Classified content as a paragraph. </td>
+                            </tr>
+                            <tr>
+                                <td>List</td>
+                                <td> &lt;ul&gt;, &lt;ol&gt; ,&lt;li&gt; </td>
+                                <td> &lt;/ul&gt;, &lt;/ol&gt; ,&lt;/li&gt;</td>
+                                <td> &lt;ul&gt;&lt;/ul&gt; for unordered list, 
+                                     &lt;ol&gt;&lt;/ol&gt; for ordered list,
+                                     &lt;li&gt;&lt;/li&gt; for list element</td>
+                            </tr>
+                            <tr>
+                                <td>Text Headers</td>
+                                <td> &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc... </td>
+                                <td> &lt;/h1&gt;, &lt;/h2&gt;, &lt;/h3&gt;, etc... </td>
+                                <td> Denotes the header level of content. </td>
+                            </tr>
+                            <tr>
+                                <td>Image</td>
+                                <td> &lt;img&gt;</td>
+                                <td> N/A</td>
+                                <td> Used to add image as content </td>
+                            </tr>
+                            <tr>
+                                <td>Divider</td>
+                                <td> &lt;div&gt;</td>
+                                <td> &lt;/div&gt; </td>
+                                <td> Specifies division between content.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="" id="">
+                <div class="lesson_banner html_banner">
+                    <img src="styles/imgs/HTML_white.png">
+                    <p>H T M L (Hypertext Markup Language)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1></h1>
+                    <p>
+                    </p>
+                </div>
+            </section>
+            
+            <div id="blank_space">
             </div>
         </div>
     </div>

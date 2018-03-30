@@ -329,7 +329,6 @@ title {
     color: black;
     float: right;
     width: 80%;
-    height: 100vh;
     background-color: #ffffff;
 }
 
@@ -383,11 +382,87 @@ title {
     padding: 0 10% 0 10%;
 }
 
+.lesson_content > h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.lesson_content > h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 3%;
+}
+
+.lesson_content h2 + p {
+    margin-left: 6%;
+}
+
+.lesson_content > h3 {
+    font-size: 25px;
+    font-weight: 200;
+    margin-left: 6%;
+}
+
+.lesson_content h3 + p {
+    margin-left: 9%;
+}
+
+.lesson_content p {
+    margin: 2% 0 3% 3%;
+    text-align: justify;
+}
+
+.lesson_content h1 + p {
+    margin-bottom: 10%;
+}
+
+.lesson_content img + p {
+    margin-bottom: 10%;
+}
+
+
 .developer_pic {
     float: right;
     width: 400px;
     margin: 0 0 20px 70px;
 }
+
+.topic_pic {
+    float: right;
+    width: 400px;
+    margin: 0 0 20px 70px;
+}
+
+#table_html {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table_html td, #table_html th {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+#table_html tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table_html tr:hover {
+    background-color: #ddd;
+}
+
+#table_html th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    background-color: #211c1c;
+}
+
+#blank_space {
+    height: 25vh;
+}
+
 /* Lessons */
 
 /*----- Contents -----*/
