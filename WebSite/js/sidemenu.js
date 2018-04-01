@@ -30,6 +30,7 @@ var c29 = document.getElementById("4xx");
 var c30 = document.getElementById("5xx");
 var c31 = document.getElementById("html_con");
 var c32 = document.getElementById("element");
+var c33 = document.getElementById("status");
 
 
 
@@ -65,6 +66,7 @@ c29.addEventListener("click", showContent);
 c30.addEventListener("click", showContent);
 c31.addEventListener("click", showContent);
 c32.addEventListener("click", showContent);
+c33.addEventListener("click", showContent);
 
 
 function showContent() {
