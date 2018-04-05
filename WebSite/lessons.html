@@ -116,12 +116,36 @@
                     <li><a data-con="html_element" id="element" href="#">Elements</a></li>
                 </ul>
             </li>
+            
+             <li>
+                <input class="toggle" type="checkbox" id="toggle_10" />
+                <label class="toggle_label" for="toggle_10"><a data-con="css_con" id="side_css" href="#">CSS</a></label>
+                <ul class="sub_menu">
+                    <li>
+                        <input class="toggle" type="checkbox" id="toggle_11" />
+                        <label class="toggle_label" for="toggle_11">Levels </label>
+                        <ul class="sub_menu">
+                            <a data-con="css_con_1" id="level_1" href="#"><li>Level 1</li></a>
+                            <a data-con="css_con_2" id="level_2" href="#"><li>Level 2</li></a>
+                            <a data-con="css_con_3" id="level_3" href="#"><li>Level 3</li></a>
+                        </ul>
+                    </li>
+                    <li><a data-con="css_con_4" id="origin_html" href="#">Origin of HTML Style Sheets</a></li>
+                    <li><a data-con="css_con_5" id="statements" href="#">Statements</a></li>
+                    <li><a data-con="css_con_6" id="at-rules" href="#">At-rules</a></li>
+                    <li><a data-con="css_con_7" id="selectors" href="#">Selectors</a></li>
+                    <li><a data-con="css_con_8" id="precedence" href="#">Rule Precedence</a></li>
+                    <li><a data-con="css_con_9" id="colors" href="#">Colors</a></li>
+                    <li><a data-con="css_con_10" id="processors" href="#">Processors</a></li>
+                    <li><a data-con="css_con_11" id="properties" href="#">Propetties and its Values</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
         
         <div id="lessons_container">
             <section id="lesson_intro">
-                <h1>Welcome ! ! !</h1>
+                
             </section>
             
             <section class="hide" id="www_con">
@@ -197,6 +221,7 @@
                     
                     
                     <h1>Request Message Parts : </h1>
+                    <br>
                     <h2>Request Line</h2>
                     <p>
                         - Compose of request method, request target, and protocol version.
@@ -249,6 +274,7 @@
                     </p>
                     
                     <h1>Response Message Parts : </h1>
+                    <br>
                     <h2>Status Line </h2>
                     <p>
                         - Compose of Protocol Version, Status Code, and Status Description.  
@@ -496,8 +522,7 @@
                 </div>
                 <div class="lesson_content">
                     <h1>Connection Management : </h1>
-                    
-                    
+                    <br>
                     <h2>Connection</h2>
                     <p>
                         - Manage the network connection to open or close the current communication after it is finished. 
@@ -1139,11 +1164,524 @@
                     </div>
                 </div>
             </section>
+            
+            <section class="hide" id="css_con">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Overview : </h1>
+                    <p>
+                        Cascading Style Sheets (CSS) is a language used to specify presentation, style or layout of a markup languages (HTML, XHTML, XML, SVG) but it is more common on web pages. The presentation, style or layout may refer to font, color, size, and position of the contents. It can also be used in adding animation to a web pages. It was developed by Håkon Wium Lie and Bert Bos. The idea for using CSS is to separate the presentational aspect from markup languages.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_1">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Level 1 (CSS 1) : </h1>
+                    <p>
+                        The first CSS that is published on December 1996, and became an official W3C Recommendation. The features of CSS Level 1 are font properties, changing colors of elements like font color and background color, text attributes, alignment of contents (text, images, tables and others), the concept of border, margin, padding and positioning and unique identification and generic classification of groups of attributes.
+                    </p>
+                </div>
+            </section>
+            
+             <section class="hide" id="css_con_2">
+                 <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Level 2 (CSS 2) : </h1>
+                    <p>
+                        Published on May 1998 by W3C as a Recommendation. Added functions mostly for positioning layout like position relative, absolute, and fixed, also added z-index which is use to position element above or under other elements. It also added media types which can be use to display web pages in different platform, aural style sheets which allows audio or sound presentation, bidirectional text, and new font properties.
+
+                        <br>There is also a CSS Level 2 Revision 1 (CSS 2.1), which is released to fix bugs and improve compatibility of in CSS 2 which is released on June 2011
+                    </p>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_3">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Level 3 (CSS 3) : </h1>
+                    <p>
+                        In CSS 3, there are many features that is introduced, included are new selectors (:target, nth-child(n), etc.), new properties (flexbox, grid, border-radius, etc), multiple background image, rounded border using border-radius, new text module, and new color module like the rgba which includes the transparency of the color.
+                    </p>
+                </div>
+            </section>  
+            
+            <section class="hide" id="css_con_4">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Origin of HTML Stylesheets : </h1>
+                    <br>
+                    
+                    <h2>Author Style</h2>
+                    <p>
+                        It is a style sheets specified by the developer of the website. Which can be categorized into:
+                    </p>
+            
+                    <ol>
+                    <li>Inline - placed in a specific element by using style attribute.</li>
+                    <p class="code">&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
+                    <li>Embedded or Internal - placed in the head of html using the style element.</li>
+                    <p class="code">&lt;style&gt; &lt;/style&gt;</p>
+                    <li>External - placed in the head of html using the link element.</li>
+                    <p class="code">&lt;link rel="stylesheet" href=""&gt;</p>
+                    </ol>
+                    
+                    <p>
+                        Note: The categories of author style above is aranged (Highest to Lowest priority) when the author specified more than one style for specific element, the one that will apply is the inline since it has higher priority.
+                    </p>
+                    
+                    <h2>User Style</h2>
+                    <p>
+                       A style sheets specified by the user for the website, it is usually done by having some plugins in the browser, although some browsers support it. It is helpful for person with eye problems. 
+                    </p>
+                    
+                    <h2>User-Agent Style</h2>
+                    <p>
+                        Also known as default style sheets, it is provided by the browser that is being used to access the website. Different browsers have different style sheets to present the website. It is used when there is no other style sheets are specified for specific element of HTML.
+                    </p>
+                    
+                    <h2>!important Declaration</h2>
+                    <p>
+                       A property can be declared !important meaning it is higher priority than the other property, it will not be overridden by property declared normal even if it is declared after the !important declaration. In some cases there might be two !important declaration for the same property, then we can look into the order of the origin to see which will be applied. 
+                    </p>
+                    
+                    <h2>Precedence of Origin (Cascading)</h2>
+                    <p>
+                       When there are collision between properties, meaning the property is being declared multiply times in different style sheets, there is a order in which style sheet will be applied for the property (Highest to Lowest priority): 
+                    </p>
+                    
+                    <ol>
+                        <li>Transition declarations</li>
+                        <li>User agent important declarations</li>
+                        <li>User important declarations </li>
+                        <li>Override important declarations</li>
+                        <li>Author important declarations </li>
+                        <li>Animation declarations</li>
+                        <li>Override normal declarations</li>
+                        <li>Author normal declarations </li>
+                        <li>User normal declarations </li>
+                        <li>User agent normal declarations </li>
+                    </ol>
+                    
+                    <p>Note: When a property is declared in the same origin then the latest declaration will be one one that will apply.</p>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_5">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Statements : </h1>
+                    <p>
+                        CSS statement are statements that is being rendered by the browser to provide styles or lay-out for elements of HTML or the HTML itself. This statements can be categorized into two:
+                    </p>
+                    <ul class="alignWithH1p">
+                        <li><span class="bold">Ruleset</span> is a combination of selectors and declaration block, considered as main building block of CSS. </li>
+                        <li><span class="bold">At-Rules</span> begins with @ followed by an identifier, it tells the CSS what to do and how it should be done. Each of the identifier has its own way of creating a statement.</li>
+                    </ul>
+                    
+                    <h2>CSS Ruleset</h2>
+                    <p>
+                        Compose of selector which represents the element of the HTML to apply the style, declaration block which is compose of declarations.
+                        <br><img src="imgs/CSS-ruleset.png">
+                    </p>
+                    
+                    <h3>CSS Declaration Block</h3>
+                    <p>
+                        Compose of CSS declarations enclosed by curly braces ({ }) which is applied for specific elements of HTML. For inline CSS using style attribute, curly braces are removed because it can only be applied for the element with the style attribute.
+                        <br><img src="imgs/CSS-block.png">
+                    </p>
+                    
+                    <h3>CSS Declaration</h3>
+                    <p>
+                        CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations.
+                        <br><img src="imgs/CSS-declaration.png">
+                    </p>
+                    <ul class="alignWithH3p">
+                        <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
+                        <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_6">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS At-rules : </h1>
+                    <br>
+                    
+                    <h2>Regular At-rules</h2>
+                    <p><span class="bold">Regular At-rules</span> follows regular syntax @KEYWORD followed by the rule to specifiy.</p>
+                    <ul class="alignWithH2p">
+                        <li><span class="code bold">@charset</span> - used to specify the character set to be used when rendering the website.</li>
+                        <li><span class="code bold">@import</span> - used to include another external CSS in a CSS, must be inserted at topmost part of the stylesheet.</li>
+                        <li><span class="code bold">@namespace</span> - allows the use of other namespaces from XML or SVG.</li>
+                    </ul>
+                    
+                    <h2>Nested At-rules</h2>
+                    <p><span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.</p>
+                    <ul class="alignWithH2p">
+                        <li><span class="code bold">@media</span> - allows to apply styles to a specific media query (eg. screen sizes)</li>
+                        <li><span class="code bold">@supports</span> - can be used to check if browser supports a specific feature before applying the styles.</li>
+                        <li><span class="code bold">@document</span> - allows to apply styles to a specific page, this styles will be ignored by the other pages of the website.</li>
+                        <li><span class="code bold">@page</span> - use to layout the printing of the page.</li>
+                        <li><span class="code bold">@font-face</span> - use to add new font that can be used in styling the website.</li>
+                        <li><span class="code bold">@keyframes</span> - use to specify keyframes for an animation which can be applied to a selector.</li>
+                        <li><span class="code bold">@viewport</span> - currently at the Working Draft stage</li>
+                        <li><span class="code bold">@counter-style</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
+                        <li><span class="code bold">@font-feature-values</span> - at the Candidate Recommendation stage, but only implemented in Gecko as of writing</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_7">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Selectors : </h1>
+                    <p>
+                        A selector is a expression which is used to select which HTML elements will the CSS statements will apply.
+                    </p>
+                    
+                    <h2>Simple Selectors</h2>
+                    <p>
+                        
+                    </p>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML<br>
+                            <span class="bold">Example:</span> <span class="code">*, .classname</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.<br>
+                            <span class="bold">Example:</span> <span class="code">h1, p, body, head</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.<br>
+                            <span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.<br>
+                            <span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.<br>
+                            <span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span>
+                        </li>
+                    </ul>
+                    
+                    <h2>Combinators</h2>
+                    <p>
+                        
+                    </p>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span>
+                        </li><br>
+                        <li><span class="bold">General Sibling Combinator</span> - uses ~ symbol,selects element that follows after the specified element but not immediately, and they both have the same parent.<br>
+                            <span class="bold">Example:</span> <span class="code">h2 ~ div, h3 ~ ol</span>
+                        </li><br>
+                        <li><span class="bold">Child Combinator</span> - uses > symbol, selects element that are children of the specified element (not including those that are under another element).<br>
+                            <span class="bold">Example:</span> <span class="code">ul > li </span>, all li elements that are directly inside the ul is selected, but if the li is contained in a div even if the div is contained in ul, it will not be included.
+                        </li><br>
+                        <li><span class="bold">Descendant Combinator</span> - uses a white space, selects element that are inside the specified element even if it is contained in other element if the element is inside the specified element.<br>
+                            <span class="bold">Example:</span> <span class="code">article div</span> selects all div that are inside the article.
+                        </li>
+                    </ul>
+                    
+                    <h2>Pseudo-Elements</h2>
+                    <p>CSS <span class="bold">pseudo-elements</span> represents elements that are not in actual HTML, which is represented with double colons (::), in older CSS version single colon (:) is used and can still be used until now but not recommended since single colon is used for pseudo-classes. This allows you to style just a part of the element. For example, <span class="code">p::first-letter</span> will allow you to style the first letter of the paragraph element of HTML. Here are list of pseudo-elements: </p>
+                    <ul class="pseudo code">
+                        <li>::after</li>
+                        <li>::before</li>
+                        <li>::cue</li>
+                        <li>::first-letter</li>
+                        <li>::first-line</li>
+                        <li>::selection</li>
+                        <li>::slotted</li>
+                        <li>::backdrop</li>
+                        <li>::placeholde</li>
+                        <li>::marker</li>
+                        <li>::spelling-error</li>
+                        <li>::grammar-error</li>
+                    </ul>
+                    
+                    <h2>Pseudo-Classes</h2>
+                    <p>CSS <span class="bold">pseudo-classes</span> represents the state of an element which is not included in actual HTML, which is identified by single colon (:). This allows to style an element based on the state, it can have different style. For example, <span class="code">a:hover</span> will apply the style only when the mouse is hovered to the anchor element. Here are list of pseudo-classes.</p> 
+                    <ul class="pseudo code">
+                        <li>:active</li>
+                        <li>:any</li>
+                        <li>:any-link</li>
+                        <li>:checked</li>
+                        <li>:default</li>
+                        <li>:defined</li>
+                        <li>:dir()</li>
+                        <li>:disabled</li>
+                        <li>:empty</li>
+                        <li>:enabled</li>
+                        <li>:first</li>
+                        <li>:first-child</li>
+                        <li>:first-of-type</li>
+                        <li>:fullscreen</li>
+                        <li>:focus</li>
+                        <li>:focus-visible</li>
+                        <li>:host</li>
+                        <li>:host()</li>
+                        <li>:host-context()</li>
+                        <li>:hover</li>
+                        <li>:indeterminate</li>
+                        <li>:in-range</li>
+                        <li>:invalid</li>
+                        <li>:lang()</li>
+                        <li>:last-child</li>
+                        <li>:last-of-type</li>
+                        <li>:left</li>
+                        <li>:link</li>
+                        <li>:not()</li>
+                        <li>:nth-child()</li>
+                        <li>:nth-last-child()</li>
+                        <li>:nth-last-of-type()</li>
+                        <li>:nth-of-type()</li>
+                        <li>:only-child</li>
+                        <li>:only-of-type</li>
+                        <li>:optional</li>
+                        <li>:out-of-range</li>
+                        <li>:read-only</li>
+                        <li>:read-write</li>
+                        <li>:required</li>
+                        <li>:right</li>
+                        <li>:root</li>
+                        <li>:scope</li>
+                        <li>:target</li>
+                        <li>:valid</li>
+                        <li>:visited</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_8">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Rule Precedence : </h1>
+                    <p> an HTML element may be the subject of the multiple style rules</p>
+                    <ul class="alignWithH1p">
+                        <li>when such rules target different properties their effects cascade (i.e, are combined) </li>
+                        <li>when the styles involve the same property, they conflict, and must be resolved such that one style is applied</li>
+                        <li>resolution</li>
+                        <ol>
+                            <li>by <a href="#origin-precedence">origin and importance</a></li>
+                            <li>by specificity - more specific selector will be applied. <br>The selectors are arranged in order of highest to lowest specificity:</li>
+                            <ol>
+                                <li>ID selectors</li>
+                                <li>Class selectors</li>
+                                <li>Type Selectors</li>
+                            </ol>
+                            <p>Note: If the selector is applied in an inline style, the effect of the properties of that selector will be prioritized.</p>
+                            <li>by order - latest declaration will apply</li>
+                        </ol>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_9">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Colors : </h1>
+                    <p>This is a CSS module that deals with colors, color types, color blending, opacity, and how you can a[[ly these colors and effects to HTML content. Not all CSS properties that take a &lt;color&gt; as a value are part of this module, but they do depend upon it</p>
+                    <ul class="alignWithH1p">
+                        <li><b>Named color</b> - The name that identifies a certain color</li>
+                        <p>i.e. color: red;</p>
+                        <li><b>Hex color</b> - The hexadecimal value that corresponds to a certain color</li>
+                        <p>i.e color: #009900;</p>
+                        <li><b>RGB color</b> - RGB stands for Red, Green,Blue and are formatted respectively</li>
+                        <p>i.e color: rgb(34, 12, 64);</p>
+                        <li><b>RGBA color</b> - similar  RGB with an additional value that being Alpha. Alpha is the opacity of the color with the scale between 0-1</li>
+                        <p>i.e color: rgba(34, 12, 64, 0.6);</p>
+                        <li><b>HSL color</b> - HSL stands for Hue, Saturation, Lightness and are formatted respectively</li>
+                        <p>Hue - Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue.</p>
+                        <p>Saturation - Saturation is a percentage value; 0% means a shade of gray and 100% is the full color.</p>
+                        <p>Lightness - Lightness is also a percentage; 0% is black, 100% is white.</p>
+                        <p>i.e. background-color: hsl(180, 50%, 50%);</p>
+                    </ul>
+                </div>
+            </section>
+            
+             <section class="hide" id="css_con_10">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Preprocessor : </h1>
+                    <p>A css preprocessor is a program that generates css from the preprocessor's own unique syntax</p>
+                    <h2>Popular CSS Preprocessors</h2>
+                    <ul class="alignWithH2p">
+                        <li><a href = "http://sass-lang.com/">SASS</a></li>
+                        <li><a href = "http://lesscss.org/">LESS</a></li>
+                        <li><a href = "http://stylus-lang.com/">Stylus</a></li>
+                        <li><a href = "http://postcss.org/">PostCSS</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="hide" id="css_con_11">
+                <div class="lesson_banner css_banner">
+                    <img src="styles/imgs/CSS_white.png">
+                    <p>C S S (Cascading Style Sheet)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>CSS Properties and its Values</h1>
+                    <br>
+                    <h2>Text Properties</h2>
+                    <br>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">color  </span> - Sets the color of a text.<br>
+                            <span class="bold">Values:</span> <span class="code">RGB, hex, keyword</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">line-height</span> - Sets the distance between lines.<br>
+                            <span class="bold">Values:</span> <span class="code">normal, number, length, %</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">letter-spacing </span> - Increase or decrease the space between characters.<br>
+                            <span class="bold">Values:</span> <span class="code">normal, length</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">text-align</span> - Aligns the text in an element.<br>
+                            <span class="bold">Values:</span> <span class="code">left, right, center, justify</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">text-decoration</span> - Adds decoration to text.<br>
+                            <span class="bold">Values:</span> <span class="code">none, underline, overline, line-through</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">text-indent</span> - Indents the first line of text in an element.<br>
+                            <span class="bold">Values:</span> <span class="code">length, %</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">text-transform</span> - Controls the letters in an element.<br>
+                            <span class="bold">Values:</span> <span class="code">none, capitalize, uppercase, lowercase</span>
+                        </li>
+                    </ul>
+                    
+                    <h2>List Properties</h2>
+                    <br>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">list-style</span> - Sets all the properties for a list in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">list-style-type, list-style-position, list-style-image, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">list-style-image</span> - Specifies an image as the list-item marker.<br>
+                            <span class="bold">Values:</span> <span class="code">URL, none, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">list-style-position</span> - Specifies where to place the list-item marker.<br>
+                            <span class="bold">Values:</span> <span class="code">inside, outside, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">list-style-type</span> - Specifies the type of list-item marker.<br>
+                            <span class="bold">Values:</span> <span class="code">none, disc, circle, square, decimal, decimal-leading-zero, armenian, georgian, lower-alpha, upper-alpha, lower-greek, lower-latin, upper-latin, lower-roman, upper-roman, inherit</span>
+                        </li>
+                        <br>
+                    </ul>
+                    
+                    <h2>Border Properties</h2>
+                    <br>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">border</span> - Sets all the border properties in one declaration .<br>
+                            <span class="bold">Values:</span> <span class="code">border-width, border-style, border-color</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-width</span> - Sets the width of the four borders.<br>
+                            <span class="bold">Values:</span> <span class="code">thin, medium, thick, length, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-style</span> - Sets the style of the four borders<br>
+                            <span class="bold">Values:</span> <span class="code">none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-color</span> - Sets the color of the four borders.<br>
+                            <span class="bold">Values:</span> <span class="code">color_name, hex_number, rgb_number, transparent, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-left</span> - Sets all the left border properties in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">border-left-width, border-left-style, border-left-color</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-right</span> - Sets all the right border properties in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">border-right-width, border-right-style, border-right-color</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-top</span> - Sets all the top border properties in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">border-top-width, border-top-style, border-top-color</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">border-bottom</span> - Sets all the bottom border properties in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">border-bottom-width, border-bottom-style, border-bottom-color</span>
+                        </li>
+                        <br>
+                    </ul>
+                    
+                    <h2>Font Properties</h2>
+                    <br>
+                    <ul class="alignWithH2p">
+                        <li><span class="bold">font</span> - Sets all the font properties in one declaration.<br>
+                            <span class="bold">Values:</span> <span class="code">font-style, font-variant, font-size/line-height, font-family</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">font-family</span> - Specifies the font family for text.<br>
+                            <span class="bold">Values:</span> <span class="code">family-name, generic-family, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">font-size</span> - Specifies the font size of text<br>
+                            <span class="bold">Values:</span> <span class="code">xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">font-style</span> - Specifies the font style for text.<br>
+                            <span class="bold">Values:</span> <span class="code">normal, italic, oblique, inherit</span>
+                        </li>
+                        <br>
+                        <li><span class="bold">font-variant</span> - Specifies whether or not a text should be displayed in a small-caps font.<br>
+                            <span class="bold">Values:</span> <span class="code">normal, small-caps, inherit</span>
+                        </li>
+                        <br>
+                    </ul>
+                </div>
+            </section>
+            
             <!-- TEMPLATE FOR NEW CONTENT
-            <section class="hide" id="">
+            <section class="" id="">
                 <div class="lesson_banner html_banner">
                     <img src="styles/imgs/HTML_white.png">
-                    <p>H T M L (Hypertext Markup Language)</p>
+                    <h1>CSS Level 3 (CSS 3) : </h1>
                 </div>
                 <div class="lesson_content">
                     <h1></h1>

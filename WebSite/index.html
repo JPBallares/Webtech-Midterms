@@ -1,31 +1,151 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where In Baguio | Home</title>
-    <link rel="stylesheet" href="style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="styles/imgs/Logo_SC.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>WebTech | Home</title>
 </head>
 
-<body>   
-    <div class="nav" id="top_nav">
-        <a href="#">Home</a>
-        <a href="#">Where To Go</a>
-        <a href="#">Where To Eat</a>
-        <a href="#">Where To Sleep</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <a href="#"><li id="nav_logo"><img src="styles/imgs/Logo_S.png"></li></a>
+                <li><a href="#">About Us</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </nav>
     
     <div id="banner">
         
+            <div id="logo">
+                <img src="styles/imgs/Logo_M.png">
+            </div>
+        
+        
+        <div id="logo_txt">
+            <p><span id="web">Web Systems</span>
+            <br><span id="tech">and Technologies</span></p>
+        </div>
+    </div>
+    
+    <div id="main_content_container">
+        <div id="introduction">
+            <div id="intro_goal">
+                <h1>Website goals</h1>
+                <hr>
+                <br>
+                <p>
+                    This website aims to inform the people that has no basic knowledge of the history and structure of http and html.
+                </p>
+            </div>
+            <div id="intro_who">
+                <h1>Who we are</h1>
+                <hr>
+                <br>
+                <p>
+                    We are students of Saint Louis University (SLU) under the School of Computing Information Science taking up Bachelor of Science major in Computer Science.
+                </p>
+            </div>
+        </div>
+        
+        <div id="current_available_lessons">
+            <div id="www_pic">
+                <div class="left_arrow"></div>
+                
+                <div class="logo_left">
+                        <img src="styles/imgs/WWW_white.png">
+                        <p>WWW</p>
+                </div>
+            </div>
+            
+            <div id="www_rm">
+                <div class="description description_right">
+                    <p>World Wide Web</p>
+                    <p>
+                        WWW stands for World Wide Web is a collection of web resources and applications that identified by Uniform Resource Locators (URLs), interlinked by hypertext links that can be access via the internet. World Wide Web was invented by Tim Berners-Lee and co-inventor Robert Cailliau in 1989 at CERN in Geneva. The main goal of Tim Berners-Lee for inventing WWW is for the researcher around the world for them share information.
+                    </p>
+                    
+                    <a href="lessons.html" class="rm_black">Read More</a>
+                </div>
+            </div>
+            
+            <div id="http_rm">
+                <div class="description description_left">
+                    <p>Hypertext Transfer Protocol</p>
+                    <p>
+                        HTTP stands for Hypertext Transfer Protocol that is used by the web. It defines how the information is transmitted and formatted. HTTP is an application layer communications protocol used to access resources (Hypertext/Hypermedia) on the World Wide Web. Develop by Tim Berners-Lee in 1989 at CERN. Port 80 is the default port.
+                    </p>
+                    
+                    <a href="lessons.html" class="rm_black">Read More</a>
+                </div>
+            </div>
+            
+            <div id="http_pic">
+                <div class="rigt_arrow">
+                    
+                </div>
+                
+                 <div class="logo_right">
+                    <img src="styles/imgs/HTTP_white.png">
+                    <p>HTTP</p>
+                </div>
+            </div>
+            
+            <div id="html_pic">
+                <div class="left_arrow">
+                    
+                </div>
+                
+                <div class="logo_left">
+                    <img src="styles/imgs/HTML_white.png">
+                    <p>HTML</p>
+                </div>
+            </div>
+            
+            <div id="html_rm">
+                <div class="description description_right">
+                    <p>Hypertext Markup Language</p>
+                    <p>
+                        Hypertext Markup Language or in short HTML is a widely used language for creating Web Pages. Used to markup document in WWW Application SGML (Standard Generalized Markup Language). The language is mainly used to define markup language structure, content, and presentation. HTML was originally developed by Tim Berners-Lee, Dan Connolly and Karen Muldrow that being maintain to date with the help of W3C and WHATWG that is initially released in 1993.   
+                    </p>
+                    
+                    <a href="lessons.html" class="rm_black">Read More</a>
+                </div>
+            </div>
+            
+            <div id="css">
+                <div class="description">
+                <p>Cascading Style Sheet (CSS)</p>
+                <p>
+                    Cascading Style Sheets (CSS) is a language used to specify presentation, style or layout of a markup languages (HTML, XHTML, XML, SVG) but it is more common on web pages. The presentation, style or layout may refer to font, color, size, and position of the contents. It can also be used in adding animation to a web pages. It was developed by Håkon Wium Lie and Bert Bos. The idea for using CSS is to separate the presentational aspect from markup languages.
+                </p>
+                    
+                <a href="lessons.html" class="rm_white">Read More</a>
+                </div>
+            </div>
+            
+            <div id="js">
+                <div class="description">
+                    <p>JavaScript</p>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer>
-    
+        <div id="footer_text">
+            <p>2018 &copy; Saint Louis University</p>
+        </div>
     </footer>
     
-    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 </html>

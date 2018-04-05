@@ -299,12 +299,21 @@ title {
     padding: 2% 5% 5% 5%; 
 }
 
-.description a {
+.rm_black {
     color: #191818;
     float: right;
     padding: 2% 4%;
     text-decoration: none;
     border: 2px solid black;
+    margin-right: 5%;
+}
+
+.rm_white {
+    color: #ffffff;
+    float: right;
+    padding: 2% 4%;
+    text-decoration: none;
+    border: 2px solid white;
     margin-right: 5%;
 }
 
@@ -318,6 +327,14 @@ title {
 #css p:nth-child(1) {
     font-size: 90px;
     font-family: ananda;
+    color: white;
+}
+
+#js {
+    padding:10%;
+    color: white;
+    clear: both;
+    background-color: #ffffff;
 }
 
 /* Home */
@@ -377,6 +394,14 @@ title {
     background-repeat: no-repeat;
 }
 
+.css_banner {
+    padding: 5%;
+    width: 90%;
+    background-image: url(../styles/imgs/css_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .lesson_content {
     font-size: 20px;
     padding: 0 10% 0 10%;
@@ -403,6 +428,11 @@ title {
     margin-left: 6%;
 }
 
+.lesson_content > h4 {
+    font-weight: 200;
+    margin-left: 6%;
+}
+
 .lesson_content h3 + p {
     margin-left: 9%;
 }
@@ -412,14 +442,64 @@ title {
     text-align: justify;
 }
 
-.lesson_content h1 + p {
-    margin-bottom: 10%;
+.lesson_content ol + p {
+    margin-left: 6%;
 }
 
 .lesson_content img + p {
     margin-bottom: 10%;
 }
 
+.lesson_content ol {
+    margin-left: 8%;
+}
+
+.lesson_content p > img {
+    width: 100%;
+    margin: 2% 0 2% 0;
+}
+
+.alignWithH1p li {
+    margin-left: 5%;
+}
+
+.alignWithH1p li:last-child {
+    margin-bottom: 3%;
+}
+
+.alignWithH2p li {
+    margin-left: 8%;
+}
+
+.alignWithH2p li:last-child {
+    margin-bottom: 3%;
+}
+
+.alignWithH3p li {
+    margin-left: 11%;
+}
+
+.alignWithH3p li:last-child {
+    margin-bottom: 3%;
+}
+
+.code {
+    font-family: "consolas";
+    background-color: whitesmoke;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ul.pseudo {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+    margin-bottom: 3%;
+    margin-left: 6%;
+}
 
 .developer_pic {
     float: right;
@@ -465,8 +545,8 @@ title {
 
 /* TEMP INTRO FOR LESSONS */
 
-#lesson_intro h1{
-    height: 25vh;
+#lesson_intro {
+    height: 30vh;
     font-size: 100px;
     text-align: center;
     margin-top: 20%;
@@ -509,8 +589,9 @@ title {
 #side_nav_container {
     float: left;
     width: 13.2%;
-    padding: 0% 2% 3% 4%;
+    padding: 4% 2% 3% 4%;
     margin-top: 6%;
+    margin-bottom: 6%;
     height: 100%;
     background-color: #ffffff;
     border-right: 3px solid #a29292;
