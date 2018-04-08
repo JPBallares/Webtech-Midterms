@@ -668,7 +668,6 @@ ul.pseudo {
 	color: white;
 }
 
-
 #sources li a:visited{
 	color: white;
 }
@@ -716,9 +715,9 @@ ul.pseudo {
 #side_nav_container {
     float: left;
     width: 13.2%;
-    padding: 4% 2% 3% 4%;
+    padding: 0 3% 0 3%;
     margin-top: 6%;
-    margin-bottom: 6%;
+    margin-bottom: 8%;
     height: 100%;
     background-color: #ffffff;
     border-right: 3px solid #a29292;
@@ -727,6 +726,12 @@ ul.pseudo {
 #side_nav_container a {
     color: #191818;
     text-decoration: none;
+}
+
+#first_li { 
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	text-align: center;
 }
 
 #side_nav_container li {
