@@ -5,6 +5,9 @@ for (var i = 0; i < links.length; i++) {
     links[i].addEventListener("click", showContent);
 }
 
+var spLink_1 = document.getElementById("sp_1");
+spLink_1.addEventListener("click", showContent);
+
 function showContent() {
     var allContent = document.querySelectorAll("#lessons_container section");
     

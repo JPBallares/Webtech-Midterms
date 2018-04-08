@@ -43,6 +43,7 @@ title {
 
 
 /*----- Navigation Bar -----*/
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -88,10 +89,6 @@ title {
 #nav_logo img {
     width: 80px;
 }
-
-/*----- Effect -----*/
-
-/*----- Effect -----*/
 
 /*----- Navigation Bar -----*/
 
@@ -297,6 +294,10 @@ title {
     font-size: 20px;
     text-align: justify;
     padding: 2% 5% 5% 5%; 
+}
+
+#js .description p{
+	color: black;
 }
 
 .rm_black {
@@ -630,6 +631,7 @@ ul.pseudo {
     content: "►";
     color: #999;
     margin-left: 8px;
+    font-size: 25px;
   }
 
 .toggle {

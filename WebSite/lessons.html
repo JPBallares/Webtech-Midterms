@@ -25,13 +25,14 @@
         <div id="side_nav_container">
         <ul class="side_nav">
             <a data-con="www_con" id="www" href="#"><li>WWW</li></a>
-            <a data-con="int_con" id="int" href="#"><li>INTERNET</li></a>
+            <a data-con="int_con" id="internet" href="#"><li>INTERNET</li></a>
             <a data-con="http_con" id="http" href="#"><li>HTTP</li></a>
             
             <li>
                 <input class="toggle" type="checkbox" id="toggle_01" />
-                <label class="toggle_label" for="toggle_01"><a a data-con="http_con_1" id="message" href="#">HTTP MESSAGES</a></label>
+                <label class="toggle_label" for="toggle_01">HTTP MESSAGES</label>
                 <ul class="sub_menu">
+                    <li><a data-con="http_con_1" id="http_messages_definition" href="#">Definition</a></li>
                     <li><a data-con="http_con_2" id="req_message" href="#">Request Message</a></li>
                     <li><a data-con="http_con_3" id="res_message" href="#">Response Message</a></li>
                 </ul>
@@ -75,9 +76,9 @@
                 <input class="toggle" type="checkbox" id="toggle_06" />
                 <label class="toggle_label" for="toggle_06">METHOD PROPERTIES</label>
                 <ul class="sub_menu">
-                    <li><a data-con="http_con_11" id="safe" href="#">Safe Methods</a></li>
-                    <li><a data-con="http_con_12" id="idempotent" href="#">Idempotent Methods</a></li>
-                    <li><a data-con="http_con_13" id="cacheable" href="#">Cacheable Methods</a></li>
+                    <li><a data-con="http_con_11" id="safe_method" href="#">Safe Methods</a></li>
+                    <li><a data-con="http_con_12" id="idempotent_method" href="#">Idempotent Methods</a></li>
+                    <li><a data-con="http_con_13" id="cacheable_method" href="#">Cacheable Methods</a></li>
                 </ul>
             </li>
             
@@ -85,22 +86,23 @@
                 <input class="toggle" type="checkbox" id="toggle_07" />
                 <label class="toggle_label" for="toggle_07">HTTP HEADERS</label>
                 <ul class="sub_menu">
-                    <a data-con="http_con_14" id="general" href="#"><li>General Header Fields</li></a>
-                    <a data-con="http_con_15" id="request" href="#"><li>Request Header Fields</li></a>
-                    <a data-con="http_con_16" id="response" href="#"><li>Response Header Fields</li></a>
-                    <a data-con="http_con_17" id="entity" href="#"><li>Entity Header Fields</li></a>
-                    <a data-con="http_con_18" id="content" href="#"><li>Content Negotiation</li></a>
-                    <a data-con="http_con_19" id="connection" href="#"><li>Connection Management</li></a>
-                    <a data-con="http_con_20" id="range" href="#"><li>Range Requests</li></a>
-                    <a data-con="http_con_21" id="authentication" href="#"><li>Authentication and Authorization</li></a>
+                    <a data-con="http_con_14" id="general_header" href="#"><li>General Header Fields</li></a>
+                    <a data-con="http_con_15" id="request_header" href="#"><li>Request Header Fields</li></a>
+                    <a data-con="http_con_16" id="response_header" href="#"><li>Response Header Fields</li></a>
+                    <a data-con="http_con_17" id="entity_header" href="#"><li>Entity Header Fields</li></a>
+                    <a data-con="http_con_18" id="content_negotiation" href="#"><li>Content Negotiation</li></a>
+                    <a data-con="http_con_19" id="connection_management" href="#"><li>Connection Management</li></a>
+                    <a data-con="http_con_20" id="range_requests" href="#"><li>Range Requests</li></a>
+                    <a data-con="http_con_21" id="authentication_authorization" href="#"><li>Authentication and Authorization</li></a>
                     <a data-con="http_con_22" id="conditionals" href="#"><li>Conditionals</li></a>
                 </ul>
             </li>
             
             <li>
                 <input class="toggle" type="checkbox" id="toggle_08" />
-                <label class="toggle_label" for="toggle_08"><a data-con="http_con_23" id="status" href="#">STATUS CODES</a></label>
+                <label class="toggle_label" for="toggle_08">STATUS CODES</label>
                 <ul class="sub_menu">
+                    <li><a data-con="http_con_23" id="status_definition" href="#">Definition</a></li>
                     <li><a data-con="http_con_24" id="1xx" href="#">1XX</a></li>
                     <li><a data-con="http_con_25" id="2xx" href="#">2XX</a></li>
                     <li><a data-con="http_con_26" id="3xx" href="#">3XX</a></li>
@@ -111,16 +113,18 @@
             
             <li>
                 <input class="toggle" type="checkbox" id="toggle_09" />
-                <label class="toggle_label" for="toggle_09"><a data-con="html_con" id="html" href="#">HTML</a></label>
+                <label class="toggle_label" for="toggle_09">HTML</label>
                 <ul class="sub_menu">
+                    <li><a data-con="html_con" id="html_difinition" href="#">Definition</a></li>
                     <li><a data-con="html_element" id="element" href="#">Elements</a></li>
                 </ul>
             </li>
             
              <li>
                 <input class="toggle" type="checkbox" id="toggle_10" />
-                <label class="toggle_label" for="toggle_10"><a data-con="css_con" id="side_css" href="#">CSS</a></label>
+                <label class="toggle_label" for="toggle_10">CSS</label>
                 <ul class="sub_menu">
+                    <li><a data-con="css_con" id="css_definition" href="#">Definition</a></li>
                     <li>
                         <input class="toggle" type="checkbox" id="toggle_11" />
                         <label class="toggle_label" for="toggle_11">Levels </label>
@@ -1200,7 +1204,7 @@
                     <h1>CSS Level 2 (CSS 2) : </h1>
                     <p>
                         Published on May 1998 by W3C as a Recommendation. Added functions mostly for positioning layout like position relative, absolute, and fixed, also added z-index which is use to position element above or under other elements. It also added media types which can be use to display web pages in different platform, aural style sheets which allows audio or sound presentation, bidirectional text, and new font properties.
-
+						<br>
                         <br>There is also a CSS Level 2 Revision 1 (CSS 2.1), which is released to fix bugs and improve compatibility of in CSS 2 which is released on June 2011
                     </p>
                 </div>
@@ -1234,12 +1238,17 @@
                     </p>
             
                     <ol>
-                    <li>Inline - placed in a specific element by using style attribute.</li>
-                    <p class="code">&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
-                    <li>Embedded or Internal - placed in the head of html using the style element.</li>
-                    <p class="code">&lt;style&gt; &lt;/style&gt;</p>
-                    <li>External - placed in the head of html using the link element.</li>
-                    <p class="code">&lt;link rel="stylesheet" href=""&gt;</p>
+						<li>Inline - placed in a specific element by using style attribute.
+                        <p class="code">&lt;p style="color: white; background-color: rgba(0, 0, 0, 0.7);"&gt; &lt;/p&gt;</p>
+						</li>
+
+						<li>Embedded or Internal - placed in the head of html using the style element.
+							<p class="code">&lt;style&gt; &lt;/style&gt;</p>
+						</li>
+
+						<li>External - placed in the head of html using the link element.
+							<p class="code">&lt;link rel="stylesheet" href=""&gt;</p>
+						</li>
                     </ol>
                     
                     <p>
@@ -1371,24 +1380,24 @@
                         
                     </p>
                     <ul class="alignWithH2p">
-                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML<br>
-                            <span class="bold">Example:</span> <span class="code">*, .classname</span>
+                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML
+                            <p><span class="bold">Example:</span> <span class="code">*, .classname</span></p>
                         </li>
-                        <br>
-                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.<br>
-                            <span class="bold">Example:</span> <span class="code">h1, p, body, head</span>
+
+                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.
+                            <p><span class="bold">Example:</span> <span class="code">h1, p, body, head</span></p>
                         </li>
-                        <br>
-                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.<br>
-                            <span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span>
+
+                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.
+                            <p><span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span></p>
                         </li>
-                        <br>
-                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.<br>
-                            <span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span>
+
+                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.
+                            <p><span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span></p>
                         </li>
-                        <br>
-                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.<br>
-                            <span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span>
+
+                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.
+                            <p><span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span></p>
                         </li>
                     </ul>
                     
@@ -1397,17 +1406,17 @@
                         
                     </p>
                     <ul class="alignWithH2p">
-                        <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.<br>
-                            <span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span>
-                        </li><br>
-                        <li><span class="bold">General Sibling Combinator</span> - uses ~ symbol,selects element that follows after the specified element but not immediately, and they both have the same parent.<br>
+                        <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.
+                            <p><span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span></p>
+                        </li>
+                        <li><span class="bold">General Sibling Combinator</span> - uses ~ symbol,selects element that follows after the specified element but not immediately, and they both have the same parent.
                             <span class="bold">Example:</span> <span class="code">h2 ~ div, h3 ~ ol</span>
-                        </li><br>
-                        <li><span class="bold">Child Combinator</span> - uses > symbol, selects element that are children of the specified element (not including those that are under another element).<br>
+                        </li>
+                        <li><span class="bold">Child Combinator</span> - uses > symbol, selects element that are children of the specified element (not including those that are under another element).
                             <span class="bold">Example:</span> <span class="code">ul > li </span>, all li elements that are directly inside the ul is selected, but if the li is contained in a div even if the div is contained in ul, it will not be included.
-                        </li><br>
-                        <li><span class="bold">Descendant Combinator</span> - uses a white space, selects element that are inside the specified element even if it is contained in other element if the element is inside the specified element.<br>
-                            <span class="bold">Example:</span> <span class="code">article div</span> selects all div that are inside the article.
+                        </li>
+                        <li><span class="bold">Descendant Combinator</span> - uses a white space, selects element that are inside the specified element even if it is contained in other element if the element is inside the specified element.
+                            <p><span class="bold">Example:</span> <span class="code">article div</span> selects all div that are inside the article.</p>
                         </li>
                     </ul>
                     
@@ -1429,7 +1438,7 @@
                     </ul>
                     
                     <h2>Pseudo-Classes</h2>
-                    <p>CSS <span class="bold">pseudo-classes</span> represents the state of an element which is not included in actual HTML, which is identified by single colon (:). This allows to style an element based on the state, it can have different style. For example, <span class="code">a:hover</span> will apply the style only when the mouse is hovered to the anchor element. Here are list of pseudo-classes.</p> 
+                    <p>CSS <span class="bold">pseudo-classes</span> represents the state of an element which is not included in actual HTML, which is identified by single colon (:). This allows to style an element based on the state, it can have different style. For example, <span class="code">a:hover</span> will apply the style only when the mouse is hovered to the anchor element. Here are list of pseudo-classes.</p>
                     <ul class="pseudo code">
                         <li>:active</li>
                         <li>:any</li>
@@ -1494,7 +1503,7 @@
                         <li>when the styles involve the same property, they conflict, and must be resolved such that one style is applied</li>
                         <li>resolution</li>
                         <ol>
-                            <li>by <a href="#origin-precedence">origin and importance</a></li>
+                            <li>by <a data-con="css_con_4" id="sp_1" href="#">origin and importance</a></li>
                             <li>by specificity - more specific selector will be applied. <br>The selectors are arranged in order of highest to lowest specificity:</li>
                             <ol>
                                 <li>ID selectors</li>
@@ -1517,19 +1526,28 @@
                     <h1>CSS Colors : </h1>
                     <p>This is a CSS module that deals with colors, color types, color blending, opacity, and how you can a[[ly these colors and effects to HTML content. Not all CSS properties that take a &lt;color&gt; as a value are part of this module, but they do depend upon it</p>
                     <ul class="alignWithH1p">
-                        <li><b>Named color</b> - The name that identifies a certain color</li>
-                        <p>i.e. color: red;</p>
-                        <li><b>Hex color</b> - The hexadecimal value that corresponds to a certain color</li>
-                        <p>i.e color: #009900;</p>
-                        <li><b>RGB color</b> - RGB stands for Red, Green,Blue and are formatted respectively</li>
-                        <p>i.e color: rgb(34, 12, 64);</p>
-                        <li><b>RGBA color</b> - similar  RGB with an additional value that being Alpha. Alpha is the opacity of the color with the scale between 0-1</li>
-                        <p>i.e color: rgba(34, 12, 64, 0.6);</p>
-                        <li><b>HSL color</b> - HSL stands for Hue, Saturation, Lightness and are formatted respectively</li>
-                        <p>Hue - Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue.</p>
-                        <p>Saturation - Saturation is a percentage value; 0% means a shade of gray and 100% is the full color.</p>
-                        <p>Lightness - Lightness is also a percentage; 0% is black, 100% is white.</p>
-                        <p>i.e. background-color: hsl(180, 50%, 50%);</p>
+                        <li><b>Named color</b> - The name that identifies a certain color
+							<br>i.e. color: red;
+						</li>
+						<br>
+						<li><b>Hex color</b> - The hexadecimal value that corresponds to a certain color
+							<br>i.e color: #009900;
+						</li>
+						<br>
+						<li><b>RGB color</b> - RGB stands for Red, Green,Blue and are formatted respectively
+							<br>i.e color: rgb(34, 12, 64);
+						</li>
+						<br>
+						<li><b>RGBA color</b> - similar  RGB with an additional value that being Alpha. Alpha is the opacity of the color with the scale between 0-1
+							<br>i.e color: rgba(34, 12, 64, 0.6);
+						</li>
+						<br>
+						<li><b>HSL color</b> - HSL stands for Hue, Saturation, Lightness and are formatted respectively
+							<p><b>Hue</b> - Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue.</p>
+							<p><b>Saturation</b> - Saturation is a percentage value; 0% means a shade of gray and 100% is the full color.</p>
+							<p><b>Lightness</b> - Lightness is also a percentage; 0% is black, 100% is white.</p>
+							<p>i.e. background-color: hsl(180, 50%, 50%);</p>
+						</li>
                     </ul>
                 </div>
             </section>
@@ -1544,10 +1562,18 @@
                     <p>A css preprocessor is a program that generates css from the preprocessor's own unique syntax</p>
                     <h2>Popular CSS Preprocessors</h2>
                     <ul class="alignWithH2p">
-                        <li><a href = "http://sass-lang.com/">SASS</a></li>
-                        <li><a href = "http://lesscss.org/">LESS</a></li>
-                        <li><a href = "http://stylus-lang.com/">Stylus</a></li>
-                        <li><a href = "http://postcss.org/">PostCSS</a></li>
+                        <li>
+							<b>SASS</b> - SASS is short for Syntactically Awesome Style Sheets. It is an extension to CSS that can help with writing styles more flexible. This can be done by using variables,functions, conditional statements, etc. These functionality of SASS can write a more easier styles in SASS than in CSS. It requires ruby installed in your system before you can use SASS, because SASS is written in ruby.
+						</li>
+						<li>
+							<b>LESS</b> - LESS is short for Leaner Style Sheets. It is a dynamic stylesheet that has variables, mixins, operations, functions, etc. It has a client side and a server side that runs with Node.js.
+						</li>
+						<li>
+							<b>Stylus</b> - Stylus is a node based css preprocessor that is focused on removing curly brackets, semi-colon and colon, etc. making your css code a lot cleaner. it has features like transparent mixins, variables, interpolation, etc.
+						</li>
+						<li>
+							<b>PostCSS</b> - PostCSS is a preprocessor tool that is used to transform styles with JavaScript plugins
+						</li>
                     </ul>
                 </div>
             </section>
@@ -1616,63 +1642,63 @@
                     <h2>Border Properties</h2>
                     <br>
                     <ul class="alignWithH2p">
-                        <li><span class="bold">border</span> - Sets all the border properties in one declaration .<br>
-                            <span class="bold">Values:</span> <span class="code">border-width, border-style, border-color</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-width</span> - Sets the width of the four borders.<br>
-                            <span class="bold">Values:</span> <span class="code">thin, medium, thick, length, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-style</span> - Sets the style of the four borders<br>
-                            <span class="bold">Values:</span> <span class="code">none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-color</span> - Sets the color of the four borders.<br>
-                            <span class="bold">Values:</span> <span class="code">color_name, hex_number, rgb_number, transparent, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-left</span> - Sets all the left border properties in one declaration.<br>
-                            <span class="bold">Values:</span> <span class="code">border-left-width, border-left-style, border-left-color</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-right</span> - Sets all the right border properties in one declaration.<br>
-                            <span class="bold">Values:</span> <span class="code">border-right-width, border-right-style, border-right-color</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-top</span> - Sets all the top border properties in one declaration.<br>
-                            <span class="bold">Values:</span> <span class="code">border-top-width, border-top-style, border-top-color</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">border-bottom</span> - Sets all the bottom border properties in one declaration.<br>
-                            <span class="bold">Values:</span> <span class="code">border-bottom-width, border-bottom-style, border-bottom-color</span>
-                        </li>
-                        <br>
+                        <li><span class="bold">border</span> - this property can set all the properties of border in single declaration .<br>
+                        <span class="bold">Values:</span> <span class="code">border-width, border-style, border-color</span>
+						</li>
+						<br>
+						<li><span class="bold">border-width</span> - this property can set the width of the four borders.<br>
+							<span class="bold">Values:</span> <span class="code">thin, medium, thick, length, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">border-style</span> - this property can set the style of the four borders<br>
+							<span class="bold">Values:</span> <span class="code">none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">border-color</span> - this property can set the color of the four borders.<br>
+							<span class="bold">Values:</span> <span class="code">color_name, hex_number, rgb_number, transparent, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">border-left</span> - this property can set all the properties of the left border in single declaration.<br>
+							<span class="bold">Values:</span> <span class="code">border-left-width, border-left-style, border-left-color</span>
+						</li>
+						<br>
+						<li><span class="bold">border-right</span> - this property can set all the properties of the right border in single declaration.<br>
+							<span class="bold">Values:</span> <span class="code"> border-right-width, border-right-style, border-right-color</span>
+						</li>
+						<br>
+						<li><span class="bold">border-top</span> - this property can set all the properties of the top border in single declaration.<br>
+							<span class="bold">Values:</span> <span class="code">border-top-width, border-top-style, border-top-color</span>
+						</li>
+						<br>
+						<li><span class="bold">border-bottom</span> - this property can set all the properties of the bottom border in single declaration.<br>
+							<span class="bold">Values:</span> <span class="code">border-bottom-width, border-bottom-style, border-bottom-color</span>
+						</li>
+						<br>
                     </ul>
                     
                     <h2>Font Properties</h2>
                     <br>
                     <ul class="alignWithH2p">
-                        <li><span class="bold">font</span> - Sets all the font properties in one declaration.<br>
-                            <span class="bold">Values:</span> <span class="code">font-style, font-variant, font-size/line-height, font-family</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">font-family</span> - Specifies the font family for text.<br>
-                            <span class="bold">Values:</span> <span class="code">family-name, generic-family, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">font-size</span> - Specifies the font size of text<br>
-                            <span class="bold">Values:</span> <span class="code">xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">font-style</span> - Specifies the font style for text.<br>
-                            <span class="bold">Values:</span> <span class="code">normal, italic, oblique, inherit</span>
-                        </li>
-                        <br>
-                        <li><span class="bold">font-variant</span> - Specifies whether or not a text should be displayed in a small-caps font.<br>
-                            <span class="bold">Values:</span> <span class="code">normal, small-caps, inherit</span>
-                        </li>
-                        <br>
+                        <li><span class="bold">font</span> - this property can set all the properties of font in single declaration.<br>
+                        <span class="bold">Values:</span> <span class="code">font-style, font-variant, font-size/line-height, font-family</span>
+						</li>
+						<br>
+						<li><span class="bold">font-family</span> - this property can specify the font family for text.<br>
+							<span class="bold">Values:</span> <span class="code">family-name, generic-family, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">font-size</span> - this property can specify the font size of text<br>
+							<span class="bold">Values:</span> <span class="code">xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">font-style</span> - this property can specify the font style for text.<br>
+							<span class="bold">Values:</span> <span class="code">normal, italic, oblique, inherit</span>
+						</li>
+						<br>
+						<li><span class="bold">font-variant</span> - this property can specify if the text should be displayed in a small-caps or not.<br>
+							<span class="bold">Values:</span> <span class="code">normal, small-caps, inherit</span>
+						</li>
+						<br>
                     </ul>
                 </div>
             </section>
@@ -1700,8 +1726,7 @@
             <p>2018 &copy; Saint Louis University</p>
         </div>
     </footer>
-    
-    <script src="js/jquery-3.3.1.min.js"></script>
+ 
     <script src="js/sidemenu.js"></script>
 </body>
 </html>
