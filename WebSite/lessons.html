@@ -155,6 +155,7 @@
 					<li><a data-con="js_con_2" id="execution_environment" href="#">Execution Environment</a></li>
 					<li><a data-con="js_con_3" id="variables" href="#">Variables</a></li>
 					<li><a data-con="js_con_4" id="event_handler" href="#">Event Handler</a></li>
+					<li><a data-con="js_con_5" id="ajax" href="#">AJAX</a></li>
                 </ul>
             </li>
         </ul>
@@ -1344,6 +1345,7 @@
                         CSS declaration is the combination of properties and its value in order to apply the style to elements of HTML. It is composed of property, colon(:) that serves as separator, value, and semi-colon(;) which tells that the declaration ended or in order to separate from other declarations.
                         <br><img src="imgs/CSS-declaration.png">
                     </p>
+					
                     <ul class="alignWithH3p">
                         <li>The <span class="bold">property</span> refers to the feature that will be applied for the design or style, like color, background, border, and many more.</li>
                         <li>The <span class="bold">value</span> is used to specify how the property will act when rendered by the browser, like for property color it can have values white, red, or black.</li>
@@ -1369,7 +1371,9 @@
                     </ul>
                     
                     <h2>Nested At-rules</h2>
-                    <p><span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.</p>
+                    <p>
+						<span class="bold">Nested At-rules</span> contains CSS statements inside its block, this statements will only apply if certain condition has been met by the user or the browser. The CSS statments are contained in curly braces ({ }) which follows after the @KEYWORD.
+					</p>
                     <ul class="alignWithH2p">
                         <li><span class="code bold">@media</span> - allows to apply styles to a specific media query (eg. screen sizes)</li>
                         <li><span class="code bold">@supports</span> - can be used to check if browser supports a specific feature before applying the styles.</li>
@@ -1396,35 +1400,46 @@
                     </p>
                     
                     <h2>Simple Selectors</h2>
-                    <p>
-                        
-                    </p>
+                    <br>
                     <ul class="alignWithH2p">
-                        <li><span class="bold">Universal</span> - used to apply styles in all element of HTML
-                            <p><span class="bold">Example:</span> <span class="code">*, .classname</span></p>
+                        <li>
+							<span class="bold">Universal</span> - used to apply styles in all element of HTML
+                            <p>
+								<span class="bold">Example:</span> <span class="code">*, .classname</span>
+							</p>
                         </li>
 
-                        <li><span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.
-                            <p><span class="bold">Example:</span> <span class="code">h1, p, body, head</span></p>
+                        <li>
+							<span class="bold">Type Selector</span> - name of the element, styles will apply to all of the element with that name.
+                            <p>
+								<span class="bold">Example:</span> <span class="code">h1, p, body, head</span>
+							</p>
                         </li>
 
-                        <li><span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.
-                            <p><span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span></p>
+                        <li>
+							<span class="bold">ID Selector</span> - elements with an attribute id, styles will apply if the id attribute matches the id selector.
+                            <p>
+								<span class="bold">Example:</span> <span class="code">#main, #navigation, #chapter1, h1#mainheading</span>
+							</p>
                         </li>
 
-                        <li><span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.
-                            <p><span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span></p>
+                        <li>
+							<span class="bold">Class Selector</span> - elements with an attribute class, styles will apply if the class attribute matches the class selector.
+                            <p>
+								<span class="bold">Example:</span> <span class="code">h1.normal, .classname, p.content, p.lead.quote</span>
+							</p>
                         </li>
 
-                        <li><span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.
-                            <p><span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span></p>
+                        <li>
+							<span class="bold">Attribute Selector</span> - elements with a specific attribute, or attribute value will be selected to apply style.
+                            <p>
+								<span class="bold">Example:</span> <span class="code">img[alt], nav[id=main], [id=main], a[href$=.png], a[href^=https], p[lang|=en], a[href*=google]</span>
+							</p>
                         </li>
                     </ul>
                     
                     <h2>Combinators</h2>
-                    <p>
-                        
-                    </p>
+                    <br>
                     <ul class="alignWithH2p">
                         <li><span class="bold">Adjacent Sibling Combinator</span> - uses + symbol,selects element that follows right after the specified element and they both have the same parent.
                             <p><span class="bold">Example:</span> <span class="code">h3 + ul, h2 + p</span></p>
@@ -1518,6 +1533,7 @@
                 <div class="lesson_content">
                     <h1>CSS Rule Precedence : </h1>
                     <p> an HTML element may be the subject of the multiple style rules</p>
+					
                     <ul class="alignWithH1p">
                         <li>when such rules target different properties their effects cascade (i.e, are combined) </li>
                         <li>when the styles involve the same property, they conflict, and must be resolved such that one style is applied</li>
@@ -1604,7 +1620,7 @@
                     <p>C S S (Cascading Style Sheet)</p>
                 </div>
                 <div class="lesson_content">
-                    <h1>CSS Properties and its Values</h1>
+                    <h1>CSS Properties and its Values : </h1>
                     <br>
                     <h2>Text Properties</h2>
                     <br>
@@ -1720,6 +1736,422 @@
 						</li>
 						<br>
                     </ul>
+                </div>
+            </section>
+			
+			<section class="hide" id="js_con">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Overview : </h1>
+                    <p>
+						Javascript is an interpreted and high-level programming language, it is the most commonly used scripting language. It is one of the main used language for World Wide Web content development along with HTML and CSS. Javascript makes webpages interactive. Javascript is developed by Ecma International (an industry association dedicated to the standardization of information and communication systems).
+                    </p>
+                </div>
+            </section>
+			
+			<section class="hide" id="js_con_1">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>Two Types of JavaScript : </h1>
+                    <br>
+					<h2>Linked or External Javascript</h2>
+					<p>
+						External Javascript is encoded in a separate file. That seperate file is then linked to the HTML file through the use of "&lt;script src=""&gt;&lt/script&gt;" tags. The seperate Javascript file is then saved with a ".js" extension.
+					</p>
+					
+					<h2>Embedded or Internal Javascript</h2>
+					<p>
+						This kind of Javascript is placed in the html file. Internal Javascript is coded in between the HTML tags. This kind of Javascript is used and coded in the same manner as it's external version.
+					</p>
+                </div>
+            </section>
+			
+			<section class="hide" id="js_con_2">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>JavaScript Execution Environment : </h1>
+                    <ul class="alignWithH1p">
+						<li>
+							<p>
+								<b>Window object</b> - represents the DOM document. Global properties are available and accessible via the window.
+							</p>
+						</li>
+
+						<li>
+							<p>
+								Other <b>window</b> properties
+							</p>
+							<ul>
+								<li>
+									<p>
+										<b>document</b> - serves as a pointer to the object Document which the window shows
+									</p>
+								</li>
+								<li>
+									<p>
+										<b>frames</b> - an array of references in the document or in window
+									</p>
+								</li>
+								<li>
+									<p>
+										<b>forms</b> - serves as an array that points to the forms of the document
+									</p>
+									<ul>
+										<li>
+											<p>
+												Each Form object has an elements array that points to the form's elements
+											</p>
+										</li>
+										<li>
+											<p>
+												Radio buttons have a problem because of the form elements that are referenced by name.
+											</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+            		</ul>
+                </div>
+            </section>	
+			
+			<section class="hide" id="js_con_3">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>JavaScript Variables : </h1>
+                    <br>
+					<h2>Variable Declaration</h2>
+					<p>
+						Javascript is a dynamically typed and loosely typed programming language, in declaring a variable there is no need for specifying the variable type. You can also apply operation with different types, like adding number to a string, evaluating a string as a boolean.
+					</p>
+					
+					<ul class="alignWithH2p">
+						<li>
+							<span class="bold">var</span> - declares a variable in a specific scope, local or global scope. If the variable is not declared in the window, it automatically creates it in the window.<br>
+							<p class="code">
+								var x = 1;<br> if (x) {<br> &nbsp;&nbsp;x = 0;<br> }
+								<br> x; // value of x is 0<br>
+							</p>
+
+						</li>
+						<li>
+							<span class="bold">let</span> - declares a variable to be a block local scope. When variable let is modified inside a block that effect will only apply inside that block.
+							<p class="code">
+								let x = 1;<br> if (x) {<br> &nbsp;&nbsp;let x = 0;<br> }
+								<br> x; // value of x is 1<br>
+							</p>
+						</li>
+						<li>
+							<span class="bold">const</span> - declares a variable that can't be changed or overwritten.
+							<p class="code">
+								const x = 1;<br> x = 10; // error
+							</p>
+						</li>
+					</ul>
+					
+					<h2>Variable Types</h2>
+					<br>
+					<h3>Primitive Types</h3>
+					<br>
+					<ul class="alignWithH3p">
+                        <li>
+                            <span class="bold">String</span> - represents collection of characters
+                            <p class="code">
+                                var d = "Double Quotation";<br> var s = 'Single Quotation';<br> var t = `Template Literal`;<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="bold">Number</span> - in Javascript, number represents decimal, binary, octal and hexa. You can also declare number with exponents, and also special numbers like <span class="code">+Infinity, -Infinity</span> and <span class="code">NaN</span> (not a number) may be assigned.
+                            <p class="code">
+                                var w = 13; // whole number<br> var d = 1.3; // with decimal<br> var e = 10e2; // 1000<br>
+                                <br> var b = 0b101; // 5<br> var o = 0100; // or var o = 0o100 which is same equals to 64<br> var h = 0x1a13; // 6675<br>
+                            </p>
+                        </li>
+                        <li><span class="bold">Boolean</span> - can have value of true or false.</li>
+                        <li><span class="bold">Undefined</span> - a variable that is not declared has an undefined type.</li>
+                        <li><span class="bold">Null</span> - a variable that has no value, or is not pointing to any value.</li>
+                    </ul>
+					
+					<h3>Objects</h3>
+                    <p>
+						All other variable types that is not primitive can be considered as Objects, although they are not instance of an Object, they inherit from Object.
+					</p>
+                    <ul class="alignWithH3p">
+                        <li>
+                            <span class="bold">Array</span> - collection of different values, in Javascript array can contain values in different data types unlike other programming language.
+                            <p class="code">
+                                var names = ["Mario", "Yoshi", "Pearl"];<br> // or<br> var names = new Array("Mario", "Yoshi", "Pearl");<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="bold">Date</span> - represents a date (years, months, days, hours, minute, seconds, milliseconds
+                            <p class="code">
+                                var d = new Date(); //date today<br> var d = new Date(milliseconds); //create date using milliseconds 1970<br> var d = new Date(dateString); //create date using a string representation of date<br> var d = new Date(year, month, day, hours, minutes, milliseconds); // create a specified<br>
+                            </p>
+                        </li>
+                        <li>
+							<span class="bold">RegExp</span> - used to match, replace, split, and find characters or sequence of characters with the use of search patterns
+
+							<p class="code">
+								var text = 'Sample text\nAnother sample text\r\nAnother one\rLast sample text';<br> var lines = text.split(/\r\n|\r|\n/);<br> console.log(lines); // logs [ 'Sample text', 'Another sample text', 'Another one', 'Last sample text' ]<br>
+							</p>				
+						</li>
+                        
+						
+                        <li>
+							<span class="bold">Function</span> - used to change the value of an arguement. To change the returned default value, a return statement is used
+						
+							<p class="code">
+								var diff = new Function('a', 'b', 'return a - b');<br> console.log(diff(7, 3));<br> // output: 4<br>
+							</p>
+						</li>
+                        
+                    </ul>
+					
+					<h2>Accuracy in Numbers</h2>
+					<p>
+						Operations in Javascript is not always accurate, there are certain cases when result will not be the exact result when computed.
+					</p>
+					<ul class="alignWithH2p">
+						<li>When the number of digits is greater than 15
+							<p class="code">
+								var n = 888888888888888 // still 888888888888888 <br> var n = 88888888888888888 // will become 88888888888888900 <br>
+							</p>
+						</li>
+						<li>
+							The number of decimal numbers must not exceed 17, in some cases floating point number will result innaccurate output even if the decimal numbers is under 17.
+							<p class="code">
+								var n = 0.3 + 0.6; // result is 0.8999999999999999 instead of 0.9 <br> var n = 0.99999999999999995; // will be rounded of to 1 <br>
+							</p>
+						</li>
+					</ul>
+					
+					<h2>Adding Strings to a Number</h2>
+					<p>
+						In Javascript, you can add string to a number, it is a feature of programming language which is loosely typed, it automatically converts string to a number, only if string contains a number, otherwise the value of the string will be NaN (not a number). However this might not work on addition since + operator is also used in concatenation, if the left most of + operation is a string it will concatenate all even the numbers, if the string is at the right most it will add all the numbers first before concatenating it to the string.
+					</p>
+					
+					<p class="code" style="margin-left: 6%">
+							var n = 1 + 3 + "0"; // n = "40" <br> var n = "0" + 1 + 3; // n = "013"; <br> var n = "Apple" * 3; // n = NaN <br> var n = "8" / 4; // n = 2; <br>
+					</p>
+					
+					<h2>Evaluating Conditions</h2>
+                	<p>
+						You can pass any variable in a conditional statement and they have correspanding value, true or alse. The following have false value: <span class="code">false, 0, "", undefined, null and NaN</span>. All other values are considered as true.
+					</p>
+                </div>
+            </section>
+			
+			<section class="hide" id="js_con_4">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>JavaScript Event Handler : </h1>
+                    <p>
+						JavaScript event handler execute when you do something on an html event.This is something that the user does to an html.
+                    </p>
+					
+					<h2>Inline event handler</h2>
+					<br>
+					<ul class="alignWithH2p pseudo">
+						<li>onabort</li>
+						<li>oncancel</li>
+						<li>oncanplay</li>
+						<li>oncanplaythrough</li>
+						<li>onchange</li>
+						<li>onclick</li>
+						<li>oncuechange</li>
+						<li>ondblclick</li>
+						<li>ondurationchange</li>
+						<li>onemptied</li>
+						<li>onended</li>
+						<li>oninput</li>
+						<li>oninvalid</li>
+						<li>onkeydown</li>
+						<li>onkeypress</li>
+						<li>onkeyup</li>
+						<li>onloadeddata</li>
+						<li>onloadedmetadata</li>
+						<li>onloadstart</li>
+						<li>onmousedown</li>
+						<li>onmouseenter</li>
+						<li>onmouseleave</li>
+						<li>onmousemove</li>
+						<li>onomuseout</li>
+						<li>onmouseover</li>
+						<li>onmouseup</li>
+						<li>onmousewheel</li>
+						<li>onpause</li>
+						<li>onplay</li>
+						<li>onplaying</li>
+						<li>onprogress</li>
+						<li>onratechange</li>
+						<li>onreset</li>
+						<li>onseeked</li>
+						<li>onseeking</li>
+						<li>onselect</li>
+						<li>onshow</li>
+						<li>onstalled</li>
+						<li>onsubmit</li>
+						<li>onsuspend</li>
+						<li>ontimeupdate</li>
+						<li>ontoggle</li>
+						<li>onvolumechange</li>
+						<li>onwaiting</li>
+					</ul>
+					
+					<h2>Event Registration</h2>
+					<br>
+					<h3>EventTarget</h3>
+					<p>
+						- This interface lets you register the removal and addition of EventListeners
+					</p>
+					<h3>Types</h3>
+					<br>
+					<ol>
+						<li>inline event attribute - event is registered as an attribute of element.
+							<p class="code">
+								&lt;button type="button" onclick="function(){};"&gt;Click Me&lt;/button&gt;
+							</p>
+						</li>
+						<li>PreDOM L2 - allows only one handler.
+							<p class="code">
+								&lt;script&gt;<br> &nbsp;&nbsp;document.getElementById("button").onclick = function;<br> &lt;/script&gt;
+								<br> &lt;button type="button" id="button"&gt;Click Me&lt;/button&gt;<br>
+							</p>
+
+						</li>
+						<li>DOM L2 - allows multiple handler.
+							<p class="code">
+								&lt;script&gt;<br> &nbsp;&nbsp;document.getElementById("button").addEventListener("click", function);<br> &nbsp;&nbsp;// to use capture phase<br> &nbsp;&nbsp;document.getElementById("button").addEventListener("click", function, true); <br> &lt;/script&gt;
+								<br> &lt;button type="button" id="button"&gt;Click Me&lt;/button&gt;<br>
+							</p>
+							<p>You can also remove and dispatch own event using <span class="code">removeEventListener()</span> and <span class="code">dispatchEvent().</span></p>
+						</li>
+						<li>Microsoft-specific, IE (v6-v10) - also allows multiple handler.
+							<p class="code">
+								&lt;script&gt;<br> &nbsp;&nbsp;document.getElementById("button").attachEvent("onclick", function);<br> &lt;/script&gt;
+								<br> &lt;button type="button" id="button"&gt;Click Me&lt;/button&gt;<br>
+							</p>
+							<p>Here the only phase available is bubble phase so the third parameter is removed. You can also remove and dispatch own event using <span class="code">detachEvent()</span> and <span class="code">fireEvent().</span></p>
+						</li>
+					</ol>
+					
+					<h3>Event Propagation Order</h3>
+					<br>
+					<ol>
+						<li>
+							<h4>Capture Phase</h4>
+							<p>Event capture is a process that is registered in the eventListener that can be intercepted by the event target's ancestor. It operates from the root event down to the event target.</p>
+						</li>
+						<li>
+							<h4>Target Phase</h4>
+							<p>Event target is the reference to an object that was originally dispatched the event</p>
+						</li>
+						<li>
+							<h4>Bubbling Phase</h4>
+							<p>Event Bubbling is opposite of event capture. the event target can trigger its ancestors that it can find. It operates form the event target up to the root tree.</p>
+						</li>
+
+					</ol>
+					
+					<h3>Event Objects Properties and Methods</h3>
+					<p>Pakilagyan nalang ng definition</p>
+					<ul class="alignWithH3p">
+						<li>
+							<span class="bold">eventPhase</span> - has a number value which indicates the event phase of the event. Numbers correspond to a event phase.
+							<p>
+							0 - None<br>
+							1 - Capture Phase<br>
+							2 - At Target<br>
+							3 - Bubble Phase<br>
+							</p>
+						</li>
+						<li>
+							<span class="bold">bubbles</span> - Has a boolean value which indicates if the event is bubble phase or not (capture phase)
+						</li>
+						<li>
+							<span class="bold">target (srcElement)</span> - The main element which actually triggered the event.
+						</li>
+						<li>
+							<span class="bold">currentTarget</span> - This is where the event is currently being handled.
+						</li>
+						<li>
+							<span class="bold">preventDefault()</span> - Prevent a default event from executing, for example an anchor element will redirect you to a link, but using preventDefault() it can be stopped from going to the link.
+						</li>
+						<li>
+							<span class="bold">stopPropagation()</span> - Stops the Propagation but the Current Target continues.
+						</li>
+						<li>
+							<span class="bold">stopImmediatePropagation()</span> - Stops the Propagation and Current Target.
+						</li>
+					</ul>
+                </div>
+            </section>
+			
+			<section class="hide" id="js_con_5">
+                <div class="lesson_banner js_banner">
+                    <img src="styles/imgs/JS_white.png">
+                    <p>JS (JavaScript)</p>
+                </div>
+                <div class="lesson_content">
+                    <h1>AJAX : </h1>
+                    <p>
+						AJAX is the acronym for "Asynchronous JavaScript And XML". It is a combination of JavaScript, HTML DOM, and XML. It is used to acquire data from a web server.
+                    </p>
+					
+					<h3>XMLHttpRequest </h3>
+					<p>
+						Allows to update parts of a page without reloading the whole page by communicating with the server and exchanging data that will be put in the page. You can create an XMLHttpRequest Object in Javascript, but be reminded that in older browser declaration of XMLHttpRequest Object is different.
+					</p>
+					<p class="code" style="margin-left: 9%">
+						var request;<br> if(window.XMLHttpRequest){ // checks if XMLHttpRequest exist<br> &nbsp;&nbsp;request = new XMLHttpRequest();<br> } else {<br> &nbsp;&nbsp;request = new ActiveXObject("Microsoft.XMLHTTP");<br> }
+						<br>
+					</p>
+					
+					<h2>Promise</h2>
+					<p>
+						An object returned by AJAX representing a completion or failure of an event from an asynchronous operation. It handles multiple callback issues that is also used to manage error and success conditions.
+					</p>
+					
+					<h3>Promise States</h3>
+					 <ul class="alignWithH3p">
+						<li>
+							<span class="bold">Pending</span> - The operation is still on it's initial state. It is not yet Fulfulled nor Rejected
+						</li>
+						<li>
+							<span class="bold">Fulfilled</span> - The operation was successfully completed
+						</li>
+						<li>
+							<span class="bold">Rejected</span> - The operation failed
+						</li>
+					</ul>
+				
+					<p class="code" style="margin-left: 9%">
+						let MyPromise = new Promise((resolve, reject) => {<br> 
+						&nbsp;&nbsp;setTimeout(function(){<br> 
+						&nbsp;&nbsp;&nbsp;&nbsp;resolve("Success!");<br>
+						&nbsp;&nbsp;}, 250);<br>
+						});<br>
+						<br>
+						MyPromise.then((successMessage) => {<br>
+						&nbsp;&nbsp;console.log("It Worked! " + successMessage);<br>
+						});<br>
+					</p>	
                 </div>
             </section>
             
