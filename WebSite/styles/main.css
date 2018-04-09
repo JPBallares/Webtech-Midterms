@@ -562,20 +562,6 @@ ul.pseudo {
     background-repeat: no-repeat;
 }
 
-#lesson_intro h1 {
-	width: 45%;
-	padding: 2.5%;
-	margin-left: 5%;
-	font-size: 50px;
-}
-
-#lesson_intro > p {
-	width: 80%;
-	padding: 0% 10% 5% 10%;
-	font-size: 30px;
-	text-align: justify;
-}
-
 /* Lesson Intro*/
 
 /* Lessons */
